@@ -74,6 +74,12 @@ http://geopro.dev/wp-json/wfs/posts/(?WFS Query parts here)
 http://geopro.dev/wp-json/wfs/states/(?WFS Query parts here)
 http://geopro.dev/wp-json/wfs/wp-users/(?WFS Query parts here)
 
+### URL
+
+http://geopro.dev/wp-json/wfs/posts/?service=wfs&version=1.1.0&request=GetCapabilities
+http://geopro.dev/wp-json/wfs/posts/?service=wfs&version=2.0.0&request=GetFeature&typeNames=namespace:featuretype
+http://geopro.dev/wp-json/wfs/multi/?service=wfs&version=2.0.0&request=GetFeature&typeNames=namespace:featuretype&srsName=CRSbbox=a1,b1,a2,b2
+
 
 Priorities
 ----------
