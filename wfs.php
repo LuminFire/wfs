@@ -15,4 +15,5 @@
  * @package wfs
  **/
 
-
+require_once( dirname( __FILE__ ) . '/lib/wfs.php' );
+WFS::get_instance();

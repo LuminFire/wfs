@@ -41,9 +41,7 @@ GET Requests are made with URL parameters. POST requests are made with GML. We'l
 
 ### Namespaces / Layer Names
 
-Should namespaces be post, user, term, comment?
-
-Or would it be posttype:geometa_name.
+Namespaces will be post types. For user, term and comment queries, the user can use wp-term, wp-comment or wp-user.
 
 So if you had a post type of "State" you could have two separate spatial meta fields which would be available under state:capitol and state:boundaries.
 
@@ -68,30 +66,13 @@ I'm not certain what we want to use for a URL structure.
 
 I do think we should claim something at the top level, and it should match our eventual plugin name. So /*wfs*/ or /*our plugin name*/
 
-### /wfs/
+### /wfs/*something*/
 
-We could go with /wfs/, then do like GeoServer
+We will be using /wfs/*something*/ as the WFS service URL. Since all REST endpoints are appended to wp-json (or whatever the user has set the REST url to, if they've customized it), they would be...
 
-https://example.com/wfs/*post type*/?service=WFS&*rest of WFS Request string*
-
-
-### /something/wfs/
-
-Or we could it register an endpoint at /*something*/ and then use /*something*/wfs/ for WFS stuff, so that we can add /*something*/*somethingelse*/ in the future? 
-
-https://example.com/*plugin name*/wfs/
-http://example.com/*plugin name*/wfs?version=2.0.0&request=GetCapabilities
-
-### /something/*layername*/wfs
-
-If we broke it down this way, then each layer would have its services separate and we could do permissions more easily and stuff like that. 
-
-
-### NOT REST
-
-~~Another option would be to make any archive page a WFS endpoint so that http://example.com/posttype/?service=WFS...~~
-
-Nevermind. I want URLs to be in a predictable place for ease of use.  
+http://geopro.dev/wp-json/wfs/posts/(?WFS Query parts here)
+http://geopro.dev/wp-json/wfs/states/(?WFS Query parts here)
+http://geopro.dev/wp-json/wfs/wp-users/(?WFS Query parts here)
 
 
 Priorities
@@ -112,7 +93,6 @@ The following operations may be implemented in the future:
 * GetPropertyValue
 * GetFeatureWithLock
 * CreatedStoredQuery
-* DropStoredQuery
 * DropStoredQuery
 * ListStoredQueries
 * DescribeStoredQueries
