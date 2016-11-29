@@ -9,7 +9,7 @@ This is a work in progress and nothing here should be considered finalized.
 Tentative Plan
 --------------
 
-Even though WFS is SOAPy, we are going to build this as a WP REST endpoint.
+Even though WFS is SOAPy, we are going to build this as a WP REST endpoint. 
 
 Any spatial metadata stored with WP-GeoMeta or a plugin that uses WP-GeoMeta should automatically be elligible to be served by WFS.
 
@@ -35,6 +35,18 @@ No reprojection will be supported, only the SRID that the geometry is stored in 
 ### WFS-T
 We will implement WFS-T so that this can be used for data collection and editing too.
 
+### POST vs GET
+
+GET Requests are made with URL parameters. POST requests are made with GML. We'll focus on GET requests first.
+
+### Namespaces / Layer Names
+
+Should namespaces be post, user, term, comment?
+
+Or would it be posttype:geometa_name.
+
+So if you had a post type of "State" you could have two separate spatial meta fields which would be available under state:capitol and state:boundaries.
+
 Security
 --------
 
@@ -47,6 +59,39 @@ Authentication
 http://v2.wp-api.org/guide/authentication/
 
 We'll start with just using cookie authentication, which we should basically get for free.
+
+
+URLS
+----
+
+I'm not certain what we want to use for a URL structure. 
+
+I do think we should claim something at the top level, and it should match our eventual plugin name. So /*wfs*/ or /*our plugin name*/
+
+### /wfs/
+
+We could go with /wfs/, then do like GeoServer
+
+https://example.com/wfs/*post type*/?service=WFS&*rest of WFS Request string*
+
+
+### /something/wfs/
+
+Or we could it register an endpoint at /*something*/ and then use /*something*/wfs/ for WFS stuff, so that we can add /*something*/*somethingelse*/ in the future? 
+
+https://example.com/*plugin name*/wfs/
+http://example.com/*plugin name*/wfs?version=2.0.0&request=GetCapabilities
+
+### /something/*layername*/wfs
+
+If we broke it down this way, then each layer would have its services separate and we could do permissions more easily and stuff like that. 
+
+
+### NOT REST
+
+~ Another option would be to make any archive page a WFS endpoint so that http://example.com/posttype/?service=WFS... ~
+
+Nevermind. I want URLs to be in a predictable place for ease of use.  
 
 
 Priorities
