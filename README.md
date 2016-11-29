@@ -89,7 +89,7 @@ If we broke it down this way, then each layer would have its services separate a
 
 ### NOT REST
 
-~~ Another option would be to make any archive page a WFS endpoint so that http://example.com/posttype/?service=WFS... ~~
+~~Another option would be to make any archive page a WFS endpoint so that http://example.com/posttype/?service=WFS...~~
 
 Nevermind. I want URLs to be in a predictable place for ease of use.  
 
