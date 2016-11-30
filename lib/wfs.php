@@ -4,6 +4,8 @@ defined( 'ABSPATH' ) or die( 'No direct access' );
 
 class WFS {
 
+	private $limit;
+
 	/**
 	 * The instance variable
 	 *
@@ -23,6 +25,9 @@ class WFS {
 	}
 
 	public function __construct() {
+
+		$this->limit = 10;
+
 		add_action('rest_api_init', function() {
 			register_rest_route( 'wfs','/([A-Z0-9a-z_-]+)/', array(
 					'methods' => WP_REST_Server::ALLMETHODS,
@@ -33,7 +38,101 @@ class WFS {
 	}
 
 	public function handle_wfs_request( $data ) {
-		return ( print_r($data,true) );
+		// http://geopro.dev/wp-json/wfs/walkin/?service=wfs&version=2.0.0&request=GetFeature&typeNames=walkin:geom
+		$params = $data->get_params();
+		$get = array_change_key_case( $params );
+
+		switch ( $get['request'] ) {
+			case 'GetFeature':
+				$this->getFeature( $data, $get );
+				break;
+		}
 	}
 
+	public function getFeature( $data, $get ) {
+		/*
+			Looks like these are all the WFS parameters, maybe?
+
+			ALIASES
+			BBOX
+			COUNT
+			FILTER
+			FILTER_LANGUAGE
+			NAMESPACES
+			OUTPUTFORMAT
+			RESOLVE
+			RESOLVEDEPTH
+			RESOLVETIMEOUT
+			RESOURCEID
+			RESULTTYPE
+			SORTBY
+			SRSNAME
+			STARTINDEX
+			STOREDQUERY_ID
+			TYPENAMES
+			VSP
+		*/	
+
+		$namespace = str_replace( '/wfs/', '', $data->get_route());
+		$featureType = '';
+	
+		if ( !empty( $get[ 'typenames' ] ) ) {
+
+			$nameParts = explode( ':', $get[ 'typenames' ] );
+
+			if ( 2 === count( $nameParts ) ) {
+				$namespace = $nameParts[0];
+				$featureType = $nameParts[1];
+			} else {
+				$featureType = $get[ 'typenames' ];
+			}
+		} else if ( !empty( $get[ 'resourceid' ] ) ) {
+			die( "Do something with resourceId" );
+		} else {
+			return;
+		}
+
+		$res = array(
+			'posts_per_page' => $this->limit,
+			'post_type' => $namespace,
+			'meta_query' => array(
+				array(
+					'key' => $featureType,
+					'compare' => 'EXISTS'
+					)
+				),
+		);
+
+		$query = new WP_Query( $res );
+
+		$geojson = array();
+
+		if ( $query->have_posts() ) {
+			while ( $query->have_posts() ) {
+				$a = 1;
+				$query->the_post();
+				$postID = get_the_ID();
+				$meta = get_post_meta( $postID );
+
+				$geom_field = $meta[ $featureType ][ 0 ];
+				unset( $meta[ $featureType ] );
+
+				$geom = WP_GeoUtil::metaval_to_geom( $geom_field );
+				$json = WP_GeoUtil::geom_to_geojson( $geom );
+				$geojson_fragment = WP_GeoUtil::merge_geojson( $json );
+
+				foreach( $meta as $k => $v ) {
+					$a = 1;
+				}
+			}
+		}
+
+
+		$this->send_search_result( $query );
+	}
+
+	public function send_search_result( $json, $format = 'json' ) {
+		print json_encode( $json );
+		exit();
+	}
 }

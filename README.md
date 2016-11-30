@@ -79,6 +79,7 @@ http://geopro.dev/wp-json/wfs/wp-users/(?WFS Query parts here)
 http://geopro.dev/wp-json/wfs/posts/?service=wfs&version=1.1.0&request=GetCapabilities
 http://geopro.dev/wp-json/wfs/posts/?service=wfs&version=2.0.0&request=GetFeature&typeNames=namespace:featuretype
 http://geopro.dev/wp-json/wfs/multi/?service=wfs&version=2.0.0&request=GetFeature&typeNames=namespace:featuretype&srsName=CRSbbox=a1,b1,a2,b2
+http://geopro.dev/wp-json/wfs/posts/?service=wfs&version=2.0.0&request=GetFeature&typeNames=walkin:geom
 
 
 Priorities
@@ -108,6 +109,12 @@ GML
 ---
  
 I don't presently see PHP libraries that can write GML. We will likely need to extend geoPHP to read and write GML, at at least a subset of GML.
+
+### KVP vs XML
+
+KVP (Key Value Parameters) is what the spec calls query string parameters. Requests can also be made using an XML ecoding. 
+
+We'll deal with KVP first, and XML encoding later (maybe).
 
 
 GeoJSON
