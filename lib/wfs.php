@@ -105,7 +105,10 @@ class WFS {
 
 		$query = new WP_Query( $res );
 
-		$geojson = array();
+		$geojson = array(
+			'type' => 'FeatureCollection',
+			'features' => array()
+			);
 
 		if ( $query->have_posts() ) {
 			while ( $query->have_posts() ) {
@@ -118,17 +121,22 @@ class WFS {
 				unset( $meta[ $featureType ] );
 
 				$geom = WP_GeoUtil::metaval_to_geom( $geom_field );
-				$json = WP_GeoUtil::geom_to_geojson( $geom );
-				$geojson_fragment = WP_GeoUtil::merge_geojson( $json );
+
+				$geojson_chunk = array(
+					'type' => 'Feature',
+					'geometry' => json_decode( WP_GeoUtil::geom_to_geojson( $geom ) ),
+					'properties' => array(),
+					);
 
 				foreach( $meta as $k => $v ) {
-					$a = 1;
+					$geojson_chunk['properties'][$k] = $v;
 				}
+
+				$geojson['features'][] = $geojson_chunk;
 			}
 		}
 
-
-		$this->send_search_result( $query );
+		$this->send_search_result( $geojson );
 	}
 
 	public function send_search_result( $json, $format = 'json' ) {
