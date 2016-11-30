@@ -26,7 +26,7 @@ class WFS {
 
 	public function __construct() {
 
-		$this->limit = 10;
+		$this->limit = 1000;
 
 		add_action('rest_api_init', function() {
 			register_rest_route( 'wfs','/([A-Z0-9a-z_-]+)/', array(
@@ -55,7 +55,7 @@ class WFS {
 
 			ALIASES
 			BBOX
-			COUNT
+			* COUNT
 			FILTER
 			FILTER_LANGUAGE
 			NAMESPACES
@@ -72,6 +72,10 @@ class WFS {
 			TYPENAMES
 			VSP
 		*/	
+
+		/*
+		 * Prepare the Query
+		 */
 
 		$namespace = str_replace( '/wfs/', '', $data->get_route());
 		$featureType = '';
@@ -92,8 +96,10 @@ class WFS {
 			return;
 		}
 
-		$res = array(
-			'posts_per_page' => $this->limit,
+		$count = ( !empty( $get[ 'count' ] ) && $get[ 'count' ] <= $this->limit ? $get[ 'count' ] : $this->limit );
+
+		$query_args = array(
+			'posts_per_page' => $count,
 			'post_type' => $namespace,
 			'meta_query' => array(
 				array(
@@ -103,12 +109,29 @@ class WFS {
 				),
 		);
 
-		$query = new WP_Query( $res );
+		if ( !empty( $get[ 'featureid' ] ) ) {
+			$query_args[ 'post__in' ] = array( $get[ 'featureid' ] );
+		}
+
+		/*
+		 * Run the Query
+		 */
+
+		$query = new WP_Query( $query_args );
+
+		/*
+		 * Process the Query results
+		 */
 
 		$geojson = array(
 			'type' => 'FeatureCollection',
 			'features' => array()
 			);
+
+		$propertyname = array();
+		if ( !empty( $get[ 'propertyname' ] ) ) {
+			$propertyname = explode( ',', $get[ 'propertyname' ] );
+		}
 
 		if ( $query->have_posts() ) {
 			while ( $query->have_posts() ) {
@@ -124,13 +147,16 @@ class WFS {
 
 				$geojson_chunk = array(
 					'type' => 'Feature',
+					'id' => $postID,
 					'geometry' => json_decode( WP_GeoUtil::geom_to_geojson( $geom ) ),
 					'properties' => array(),
 					);
 
-				foreach( $meta as $k => $v ) {
-					$geojson_chunk['properties'][$k] = $v;
+				if ( !empty( $propertyname ) ) {
+					$meta = array_intersect_key( $meta, array_flip( $propertyname ) );
 				}
+
+				$geojson_chunk['properties'] = array_merge( $geojson_chunk[ 'properties' ], $meta );
 
 				$geojson['features'][] = $geojson_chunk;
 			}
