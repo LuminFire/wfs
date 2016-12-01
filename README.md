@@ -140,6 +140,10 @@ Supported Operations
  * srsName
  * propertyName
 
+### DescribeFeatureType
+
+ * typeNames
+
 
 References
 ----------

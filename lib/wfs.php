@@ -34,7 +34,26 @@ class WFS {
 					'callback' => array( $this, 'handle_wfs_request' ),
 				) 
 			);
+
+			// Handle static XML schema requests
+			register_rest_route( 'wfs','/schemas/.*', array(
+					'methods' => WP_REST_Server::ALLMETHODS,
+					'callback' => array( $this, 'handle_schema_request' ),
+				) 
+			);
 		} );
+	}
+
+	public function handle_schema_request( $data ) {
+		$route = preg_replace( '|^/wfs|', '', $data->get_route() );
+
+		$file_on_disk = dirname( __FILE__ ) . '/..' . $route;
+
+		if ( file_exists( $file_on_disk ) ) {
+			header( 'Content-type: application/xml' );
+			readfile( $file_on_disk );
+			exit();
+		}
 	}
 
 	public function handle_wfs_request( $data ) {
@@ -44,12 +63,15 @@ class WFS {
 
 		switch ( $get['request'] ) {
 			case 'GetFeature':
-				$this->getFeature( $data, $get );
+				$this->get_feature( $data, $get );
+				break;
+			case 'DescribeFeatureType':
+				$this->describe_feature_type( $data, $get );
 				break;
 		}
 	}
 
-	public function getFeature( $data, $get ) {
+	public function get_feature( $data, $get ) {
 		/*
 			Looks like these are all the WFS parameters, maybe?
 
@@ -129,10 +151,40 @@ class WFS {
 			if ( is_numeric( $epsg ) ) {
 				$query_args[ 'meta_query' ][] = array(
 					'key' => $featureType,
-					'compare' => 'SRID',
 					'value' => $epsg,
+					'compare' => 'SRID',
 				);
 			}
+		}
+
+		/*
+		 * BBOX! 4326 uses lon,lat,lon,lat
+		 *
+		 * BBOX=43.8702,-96.1523,44.3552,-95.5124
+		 */
+		if ( !empty( $get[ 'bbox' ] ) ) {
+			$coords = explode( ',', $get[ 'bbox' ] );
+			$bboxjson = array(
+				'type' => 'Feature',
+				'geometry' => array(
+					'type' => 'Polygon',
+					'coordinates' => array(
+						array( $coords[1], $coords[0] ),
+						array( $coords[1], $coords[2] ),
+						array( $coords[3], $coords[2] ),
+						array( $coords[3], $coords[0] ),
+						array( $coords[1], $coords[0] ),
+						),
+					)
+				);
+
+			$bboxjson = json_encode( $bboxjson );
+
+			$query_args[ 'meta_query' ][] = array(
+				'key' => $featureType,
+				'value' => $bboxjson,
+				'compare' => 'intersects'
+			);
 		}
 
 		/*
@@ -155,6 +207,9 @@ class WFS {
 			$propertyname = explode( ',', $get[ 'propertyname' ] );
 		}
 
+		/*
+		 * TODO: turn this into streaming output
+		 */
 		if ( $query->have_posts() ) {
 			while ( $query->have_posts() ) {
 				$a = 1;
@@ -178,6 +233,7 @@ class WFS {
 					$meta = array_intersect_key( $meta, array_flip( $propertyname ) );
 				}
 
+				$meta = array_map('array_shift',$meta);
 				$geojson_chunk['properties'] = array_merge( $geojson_chunk[ 'properties' ], $meta );
 
 				$geojson['features'][] = $geojson_chunk;
@@ -190,5 +246,67 @@ class WFS {
 	public function send_search_result( $json, $format = 'json' ) {
 		print json_encode( $json );
 		exit();
+	}
+
+	public function describe_feature_type( $data, $get ) {
+
+		if ( empty( $get[ 'typenames' ] ) ) {
+			return;
+		}
+
+		$namespace = str_replace( '/wfs/', '', $data->get_route());
+		$featureType = '';
+
+		$nameParts = explode( ':', $get[ 'typenames' ] );
+
+		if ( 2 === count( $nameParts ) ) {
+			$namespace = $nameParts[0];
+			$featureType = $nameParts[1];
+		} else {
+			$featureType = $get[ 'typenames' ];
+		}
+
+		$query_args = array(
+			'posts_per_page' => 1,
+			'post_type' => $namespace,
+			'meta_query' => array(
+				array(
+					'key' => $featureType,
+					'compare' => 'EXISTS'
+					)
+				),
+		);
+
+		$query = new WP_Query( $query_args );
+
+		if ( $query->have_posts() ) {
+				$query->the_post();
+				$postID = get_the_ID();
+				$meta = get_post_meta( $postID );
+				unset( $meta[ $featureType ] );
+
+				$xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
+				$xml .= '<xsd:schema xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:' . esc_attr( $namespace ). '="' . esc_attr( $namespace )  . '" xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="' . esc_attr( $namespace ) .'">' . "\n";
+				$xml .= '<xsd:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="' . get_rest_url() . 'wfs/schemas/gml/3.2.1/gml.xsd"/>' . "\n";
+				$xml .= '<xsd:complexType name="geomType"><xsd:complexContent><xsd:extension base="gml:AbstractFeatureType">' . "\n";
+				$xml .= '<xsd:sequence>' . "\n";
+
+				foreach( $meta as $meta_key => $meta_value ) {
+					$xml .= '<xsd:element maxOccurs="1" minOccurs="0" name="' . esc_attr( $meta_key ) . '" nillable="true" type="xsd:string"/>' . "\n";
+				}
+
+				$xml .= '<xsd:element maxOccurs="1" minOccurs="0" name="' . esc_attr( $featureType ) . '" nillable="true" type="gml:GeometryPropertyType"/>' . "\n";
+
+				$xml .= '</xsd:sequence>' . "\n";
+				$xml .= '</xsd:extension>' . "\n";
+				$xml .= '</xsd:complexContent>' . "\n";
+				$xml .= '</xsd:complexType>' . "\n";
+				$xml .= '<xsd:element name="' . esc_attr($featureType) . '" substitutionGroup="gml:AbstractFeature" type="' . esc_attr( $namespace ) . ':geomType"/>' . "\n";
+				$xml .= '</xsd:schema>' . "\n";
+
+				header( 'Content-type: application/xml' );
+				print $xml;
+				exit();
+		}
 	}
 }
