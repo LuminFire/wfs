@@ -71,6 +71,11 @@ class WFS {
 			STOREDQUERY_ID
 			TYPENAMES
 			VSP
+
+			Stuff from GeoServer docs
+			* propertyName
+			* featureId
+			* srsName
 		*/	
 
 		/*
@@ -109,8 +114,25 @@ class WFS {
 				),
 		);
 
+		// FeatureID
 		if ( !empty( $get[ 'featureid' ] ) ) {
 			$query_args[ 'post__in' ] = array( $get[ 'featureid' ] );
+		}
+
+		/*
+		 * srsName -- supports formats like "EPSG:4326", etc
+		 */
+		if ( !empty( $get[ 'srsname' ] ) ) {
+			$epsg = strtolower( $get[ 'srsname' ] );
+			$epsg = str_replace( 'epsg:', '', $epsg );
+
+			if ( is_numeric( $epsg ) ) {
+				$query_args[ 'meta_query' ][] = array(
+					'key' => $featureType,
+					'compare' => 'SRID',
+					'value' => $epsg,
+				);
+			}
 		}
 
 		/*

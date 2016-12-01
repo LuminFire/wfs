@@ -129,6 +129,18 @@ CQL/ECQL
 Should we support CQL/ECQL? It's so much more efficient to write CQL than to write a GML query document. What would it take to parse CQL?
 
 
+Supported Operations
+--------------------
+
+### GetFeature
+
+ * typeNames
+ * count
+ * featureId
+ * srsName
+ * propertyName
+
+
 References
 ----------
 
