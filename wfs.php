@@ -15,6 +15,6 @@
  * @package wfs
  **/
 
-require_once( dirname( __FILE__ ) . '/lib/rest.php' );
+require_once( dirname( __FILE__ ) . '/lib/wfs-rest.php' );
 require_once( dirname( __FILE__ ) . '/lib/wp-geometa-lib/wp-geometa-lib-loader.php' );
 WFS_Rest::get_instance();

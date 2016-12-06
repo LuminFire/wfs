@@ -281,8 +281,8 @@ class WFS_200 {
 
 	public function get_capabilities( $data, $get ) {
 		require_once( dirname( __FILE__ ) . '/wfs_200_capabilities_xml.php' );
-		$xml = new WFS_200_capabilities_xml( $data, $get );
-		// header( 'Content-type: application/xml' );
+		$xml = new WFS_200_capabilities_xml( $data, $get, $this );
+		header( 'Content-type: application/xml' );
 		print $xml;
 		exit();
 	}

@@ -81,4 +81,39 @@ class WFS_Rest {
 	public function wfs_200( $data ) {
 		new WFS_200( $data );
 	}
+
+	/**
+	 * Get a list of post types/namespaces that we can serve up.
+	 * TODO: Let admins turn post types on manually and fetch
+	 * that preference list here instead of offering all types.
+	 *
+	 * @return An array where keys are namespaces and the value is an array of featureTypes in that namespace
+	 */
+	public static function allowed_feature_types( $in_schema = null) {
+		global $wpdb;
+		$feature_types = array();
+
+		$query = 'SELECT DISTINCT p.post_type, g.meta_key
+			FROM 
+			wp_posts p,
+			wp_postmeta_geo g
+			WHERE 
+			g.post_id=p.ID
+			AND p.post_status = \'publish\' ';
+
+		if ( !is_null( $in_schema ) ) {
+			$query .= ' AND p.post_type = %s';
+
+			$query = $wpdb->prepare( $query, array( $in_schema ) );
+		}
+
+			$res = $wpdb->get_results( $query, ARRAY_A ); // @codingStandardsIgnoreLine
+
+			foreach ( $res as $row ) {
+				$post_types[ $row['post_type'] ][] = $row['meta_key'];
+			}
+
+		return $post_types;
+	}
 }
+
