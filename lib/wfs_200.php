@@ -13,6 +13,10 @@ class WFS_200 {
 		$params = $data->get_params();
 		$get = array_change_key_case( $params );
 
+		if ( !empty( $get['typename'] ) ) {
+			$get['typenames'] = $get['typename'];
+		}
+
 		switch ( $get['request'] ) {
 			case 'GetCapabilities':
 				$this->get_capabilities( $data, $get );
@@ -60,7 +64,7 @@ class WFS_200 {
 		 * Prepare the Query
 		 */
 
-		$namespace = str_replace( '/wfs/', '', $data->get_route());
+		$namespace = ( !empty( $get['namespace'] ) ? $get['namespace'] . '/' : '');
 		$featureType = '';
 	
 		if ( !empty( $get[ 'typenames' ] ) ) {
@@ -199,18 +203,14 @@ class WFS_200 {
 		$this->send_search_result( $geojson );
 	}
 
-	public function send_search_result( $json, $format = 'json' ) {
+	public function send_search_result( $json, $format = 'gml32' ) {
 		print json_encode( $json );
 		exit();
 	}
 
 	public function describe_feature_type( $data, $get ) {
 
-		if ( empty( $get[ 'typenames' ] ) ) {
-			return;
-		}
-
-		$namespace = str_replace( '/wfs/', '', $data->get_route());
+		$namespace = ( !empty( $get['namespace'] ) ? $get['namespace'] . '/' : '');
 		$featureType = '';
 
 		$nameParts = explode( ':', $get[ 'typenames' ] );
