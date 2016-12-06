@@ -6,32 +6,39 @@
 class WFS_200 {
 
 	var $limit = 500;
+	var $data;
+	var $get;
 
 	public function __construct( $data ) {
 
 		// http://geopro.dev/wp-json/wfs/walkin/?service=wfs&version=2.0.0&request=GetFeature&typeNames=walkin:geom
-		$params = $data->get_params();
-		$get = array_change_key_case( $params );
+		$this->data = $data;
+		$params = $this->data->get_params();
+		$this->get = array_change_key_case( $params );
 
-		if ( !empty( $get['typename'] ) ) {
-			$get['typenames'] = $get['typename'];
+		if ( !empty( $this->get['typename'] ) ) {
+			$this->get['typenames'] = $this->get['typename'];
 		}
 
-		switch ( $get['request'] ) {
+		if ( empty( $this->get[ 'outputformat' ] ) ) {
+			$this->get['outputformat'] = 'gml32';
+		}
+
+		switch ( $this->get['request'] ) {
 			case 'GetCapabilities':
-				$this->get_capabilities( $data, $get );
+				$this->get_capabilities();
 			case 'GetFeature':
-				$this->get_feature( $data, $get );
+				$this->get_feature();
 				break;
 			case 'DescribeFeatureType':
-				$this->describe_feature_type( $data, $get );
+				$this->describe_feature_type();
 				break;
 			default:
-				$this->unsupported_request( $get['request'] );
+				$this->unsupported_request();
 		}
 	}
 
-	public function get_feature( $data, $get ) {
+	public function get_feature() {
 		/*
 			Looks like these are all the WFS parameters, maybe?
 
@@ -64,26 +71,26 @@ class WFS_200 {
 		 * Prepare the Query
 		 */
 
-		$namespace = ( !empty( $get['namespace'] ) ? $get['namespace'] . '/' : '');
+		$namespace = ( !empty( $this->get['namespace'] ) ? $this->get['namespace'] . '/' : '');
 		$featureType = '';
 	
-		if ( !empty( $get[ 'typenames' ] ) ) {
+		if ( !empty( $this->get[ 'typenames' ] ) ) {
 
-			$nameParts = explode( ':', $get[ 'typenames' ] );
+			$nameParts = explode( ':', $this->get[ 'typenames' ] );
 
 			if ( 2 === count( $nameParts ) ) {
 				$namespace = $nameParts[0];
 				$featureType = $nameParts[1];
 			} else {
-				$featureType = $get[ 'typenames' ];
+				$featureType = $this->get[ 'typenames' ];
 			}
-		} else if ( !empty( $get[ 'resourceid' ] ) ) {
+		} else if ( !empty( $this->get[ 'resourceid' ] ) ) {
 			die( "Do something with resourceId" );
 		} else {
 			return;
 		}
 
-		$count = ( !empty( $get[ 'count' ] ) && $get[ 'count' ] <= $this->limit ? $get[ 'count' ] : $this->limit );
+		$count = ( !empty( $this->get[ 'count' ] ) && $this->get[ 'count' ] <= $this->limit ? $this->get[ 'count' ] : $this->limit );
 
 		$query_args = array(
 			'posts_per_page' => $count,
@@ -97,15 +104,15 @@ class WFS_200 {
 		);
 
 		// FeatureID
-		if ( !empty( $get[ 'featureid' ] ) ) {
-			$query_args[ 'post__in' ] = array( $get[ 'featureid' ] );
+		if ( !empty( $this->get[ 'featureid' ] ) ) {
+			$query_args[ 'post__in' ] = array( $this->get[ 'featureid' ] );
 		}
 
 		/*
 		 * srsName -- supports formats like "EPSG:4326", etc
 		 */
-		if ( !empty( $get[ 'srsname' ] ) ) {
-			$epsg = strtolower( $get[ 'srsname' ] );
+		if ( !empty( $this->get[ 'srsname' ] ) ) {
+			$epsg = strtolower( $this->get[ 'srsname' ] );
 			$epsg = str_replace( 'epsg:', '', $epsg );
 
 			if ( is_numeric( $epsg ) ) {
@@ -122,8 +129,8 @@ class WFS_200 {
 		 *
 		 * BBOX=43.8702,-96.1523,44.3552,-95.5124
 		 */
-		if ( !empty( $get[ 'bbox' ] ) ) {
-			$coords = explode( ',', $get[ 'bbox' ] );
+		if ( !empty( $this->get[ 'bbox' ] ) ) {
+			$coords = explode( ',', $this->get[ 'bbox' ] );
 			$bboxjson = array(
 				'type' => 'Feature',
 				'geometry' => array(
@@ -163,8 +170,8 @@ class WFS_200 {
 			);
 
 		$propertyname = array();
-		if ( !empty( $get[ 'propertyname' ] ) ) {
-			$propertyname = explode( ',', $get[ 'propertyname' ] );
+		if ( !empty( $this->get[ 'propertyname' ] ) ) {
+			$propertyname = explode( ',', $this->get[ 'propertyname' ] );
 		}
 
 		/*
@@ -182,11 +189,27 @@ class WFS_200 {
 
 				$geom = WP_GeoUtil::metaval_to_geom( $geom_field );
 
+				if ( empty( $geom ) ) {
+					$a = 1;
+					continue;
+				}
+				$geom = json_decode( WP_GeoUtil::geom_to_geojson( $geom ), true );
+
+				if ( empty( $geom ) ) {
+					$a = 1;
+					$geom = WP_GeoUtil::metaval_to_geom( $geom_field );
+					print $geom . "\n";
+					$geom = json_decode( WP_GeoUtil::geom_to_geojson( $geom ), true );
+					continue;
+				}
+
 				$geojson_chunk = array(
 					'type' => 'Feature',
 					'id' => $postID,
-					'geometry' => json_decode( WP_GeoUtil::geom_to_geojson( $geom ) ),
+					'geometry' => $geom,
 					'properties' => array(),
+					'_ns' => get_post_type(),
+					'_feature' => $featureType,
 					);
 
 				if ( !empty( $propertyname ) ) {
@@ -203,23 +226,34 @@ class WFS_200 {
 		$this->send_search_result( $geojson );
 	}
 
-	public function send_search_result( $json, $format = 'gml32' ) {
-		print json_encode( $json );
+	public function send_search_result( $json ) {
+		switch ( $this->get[ 'outputformat' ]) {
+			case 'json':
+				print json_encode( $json );
+			default:
+				header( 'Content-type: application/xml' );
+				require_once( dirname( __FILE__ ) . '/geojson-to/geojson-to.php' );
+				$gml = geojson_to::gml32( $json );
+				$gml->preserveWhiteSpace = false;
+				$gml->formatOutput = true;
+				$xml = $gml->saveXML();
+				print $xml;
+		}
 		exit();
 	}
 
-	public function describe_feature_type( $data, $get ) {
+	public function describe_feature_type() {
 
-		$namespace = ( !empty( $get['namespace'] ) ? $get['namespace'] . '/' : '');
+		$namespace = ( !empty( $this->get['namespace'] ) ? $this->get['namespace'] . '/' : '');
 		$featureType = '';
 
-		$nameParts = explode( ':', $get[ 'typenames' ] );
+		$nameParts = explode( ':', $this->get[ 'typenames' ] );
 
 		if ( 2 === count( $nameParts ) ) {
 			$namespace = $nameParts[0];
 			$featureType = $nameParts[1];
 		} else {
-			$featureType = $get[ 'typenames' ];
+			$featureType = $this->get[ 'typenames' ];
 		}
 
 		$query_args = array(
@@ -266,10 +300,11 @@ class WFS_200 {
 		}
 	}
 
-	public function unsupported_request( $req ) {
+	public function unsupported_request() {
 		header( $_SERVER['SERVER_PROTOCOL'] . ' 500 Not Implemented', true, 501 );
 		print json_encode( array(
 			'Oops' => 'Looks like you made an unsupported request. If we should support it, tell us at https://github.com/cimburadotcom/wfs',
+			'Request' => $this->get['request'],
 			'Documentation' => array( 
 				'https://portal.opengeospatial.org/files/?artifact_id=66933',
 				'http://docs.geoserver.org/latest/en/user/services/wfs/reference.html',
@@ -279,9 +314,9 @@ class WFS_200 {
 		exit();
 	}
 
-	public function get_capabilities( $data, $get ) {
+	public function get_capabilities() {
 		require_once( dirname( __FILE__ ) . '/wfs_200_capabilities_xml.php' );
-		$xml = new WFS_200_capabilities_xml( $data, $get, $this );
+		$xml = new WFS_200_capabilities_xml( $this->data, $this->get, $this );
 		header( 'Content-type: application/xml' );
 		print $xml;
 		exit();

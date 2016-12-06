@@ -160,7 +160,7 @@ class WFS_200_capabilities_xml {
 		$domElement = dom_import_simplexml( $this->xml );
 		$dom = $domElement->ownerDocument;
 		$dom->preserveWhiteSpace = false; 
-		$dom->formatOutput = true; 
+		$dom->formatOutput = false; 
 		$dom->encoding = 'UTF-8';
 		return $dom->saveXML();
 	}
