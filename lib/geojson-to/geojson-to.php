@@ -70,7 +70,7 @@ class geojson_to {
 				$feat->addChild( $prop, $val );
 			}
 
-			geojson_to::geojson_geom_to_geom( $feat, $feature['geometry'], $feature['_feature'], $projection );
+			self::geojson_geom_to_geom( $feat, $feature['geometry'], $feature['_feature'], $projection );
 		}
 
 		return $dom;	
@@ -98,7 +98,7 @@ class geojson_to {
 				$gml = $gml->addChild('MultiGeometry');
 				foreach( $geometry['coordinates'] as $one_multi ) {
 					$geometryMember = $gml->addChild('geometryMember');
-					$this->make_gml_polygon( $geometryMember, $one_multi );
+					self::make_gml_polygon( $geometryMember, $one_multi );
 				}
 				break;
 			default:
@@ -117,13 +117,13 @@ class geojson_to {
 	private static function make_gml_polygon( $gml, $one_multi ) {
 		$exterior = array_shift($one_multi);
 		$extpoly = $polygon = $gml->addChild( 'gml:Polygon','' , 'http://www.opengis.net/gml/3.2' );
-		$positions = geojson_to::coords_to_poslist( $exterior );
+		$positions = self::coords_to_poslist( $exterior );
 		$polygon->addChild('exterior')->addChild('LinearRing')->addChild('posList',$positions);
 
 		foreach( $one_multi as $interior_poly ) {
 			$polygon = $gml->addChild('surfaceMember')->addChild('Polygon');
 			$interior = array_shift($one_multi);
-			$positions = geojson_to::coords_to_poslist( $interior );
+			$positions = self::coords_to_poslist( $interior );
 			$polygon->addChild('interior')->addChild('LinearRing')->addChild('posList',$positions);
 		}
 		return $extpoly;
