@@ -35,7 +35,7 @@ class WFS_200_capabilities_xml {
 			xmlns:xlink="http://www.w3.org/1999/xlink" 
 			xmlns:xs="http://www.w3.org/2001/XMLSchema" 
 			xmlns:xml="http://www.w3.org/XML/1998/namespace"';
-		$xmlString .= 'xsi:schemaLocation="http://www.opengis.net/wfs/2.0 ' . get_rest_url() . 'wfs/schemas/wfs/2.0/wfs.xsd" ';
+		$xmlString .= 'xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd" ';
 
 		$namespace = ( !empty( $this->get['namespace'] ) ? $this->get['namespace'] : null );
 		$post_types = WFS_Rest::allowed_feature_types( $namespace );

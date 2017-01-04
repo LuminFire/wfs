@@ -291,7 +291,7 @@ class WFS_200 {
 
 				$xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 				$xml .= '<xsd:schema xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:' . esc_attr( $namespace ). '="' . esc_attr( $namespace )  . '" xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="' . esc_attr( $namespace ) .'">' . "\n";
-				$xml .= '<xsd:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="' . get_rest_url() . 'wfs/schemas/gml/3.2.1/gml.xsd"/>' . "\n";
+				$xml .= '<xsd:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>' . "\n";
 				$xml .= '<xsd:complexType name="geomType"><xsd:complexContent><xsd:extension base="gml:AbstractFeatureType">' . "\n";
 				$xml .= '<xsd:sequence>' . "\n";
 

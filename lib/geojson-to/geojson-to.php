@@ -28,9 +28,9 @@ class geojson_to {
 
 	$schemaLocations = array(
 	'http://www.opengis.net/wfs/2.0',
-	'http://geopro.dev/wp-json/wfs/schemas/wfs/2.0/wfs.xsd',
+	'http://schemas.opengis.net/wfs/2.0/wfs.xsd',
 	'http://www.opengis.net/gml/3.2',
-	'http://geopro.dev/wp-json/wfs/schemas/gml/3.2.1/gml.xsd',
+	'http://schemas.opengis.net/gml/3.2.1/gml.xsd',
 	'states',
 	'http://geopro.dev/wp-json/wfs/2.0.0/wfs?service=WFS&amp;version=2.0.0&amp;request=DescribeFeatureType&amp;typeName=' . implode(',',$ns_pairs),
 	);
