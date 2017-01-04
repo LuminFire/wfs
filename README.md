@@ -150,4 +150,5 @@ References
 
 * [GeoServer WFS Reference](http://docs.geoserver.org/latest/en/user/services/wfs/reference.html)
 * [WFS 2.0.2](http://docs.opengeospatial.org/is/09-025r2/09-025r2.html#125)
-* [GML 3.3](http://www.opengeospatial.org/standards/gml)
+* [GML 3.2](http://www.opengeospatial.org/standards/gml)
+* [GML 3.2 explorer](http://www.datypic.com/sc/niem21/ns-gml32.html)

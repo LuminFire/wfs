@@ -1,0 +1,1562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:FeatureCollection xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:walkin="walkin" xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" numberMatched="unknown" numberReturned="0" timeStamp="2016-12-06T15:35:36.444Z" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://localhost:8080/geoserver/schemas/wfs/2.0/wfs.xsd walkin http://localhost:8080/geoserver/walkin/wfs?service=WFS&amp;version=1.0.0&amp;request=DescribeFeatureType&amp;typeName=walkin%3Ageom http://www.opengis.net/gml/3.2 http://localhost:8080/geoserver/schemas/gml/3.2.1/gml.xsd">
+	<wfs:member>
+		<walkin:geom gml:id="geom.1">
+			<walkin:gid>1</walkin:gid>
+			<walkin:cty_name>Becker</walkin:cty_name>
+			<walkin:map_title>Becker WIA #272</walkin:map_title>
+			<walkin:wia_id>wia030272</walkin:wia_id>
+			<walkin:wia_pdf>wia030272.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #272</walkin:map_label_>
+			<walkin:gpsmapid>BECK WIA 272</walkin:gpsmapid>
+			<walkin:county_num>03</walkin:county_num>
+			<walkin:acres>150.374970862</walkin:acres>
+			<walkin:shape_leng>3308.85845700</walkin:shape_leng>
+			<walkin:shape_area>608545.916601</walkin:shape_area>
+			<walkin:atlas_page>9.00000000000</walkin:atlas_page>
+			<walkin:wia_tile>41.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-96.076091 47.034233 -96.076058 47.031809 -96.078706 47.031788 -96.078684 47.030565 -96.078673 47.029361 -96.079348 47.028228 -96.082244 47.028163 -96.085629 47.028199 -96.087832 47.02827 -96.087977 47.031007 -96.08798 47.031173 -96.088003 47.032448 -96.087993 47.032542 -96.087686 47.035302 -96.08604 47.03531 -96.084021 47.035298 -96.082019 47.035306 -96.080007 47.035308 -96.078148 47.035311 -96.078135 47.034206 -96.076091 47.034233</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.2">
+			<walkin:gid>2</walkin:gid>
+			<walkin:cty_name>Becker</walkin:cty_name>
+			<walkin:map_title>Becker WIA #273</walkin:map_title>
+			<walkin:wia_id>wia030273</walkin:wia_id>
+			<walkin:wia_pdf>wia030273.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #273</walkin:map_label_>
+			<walkin:gpsmapid>BECK WIA 273</walkin:gpsmapid>
+			<walkin:county_num>03</walkin:county_num>
+			<walkin:acres>154.772020180</walkin:acres>
+			<walkin:shape_leng>3278.12629521</walkin:shape_leng>
+			<walkin:shape_area>626340.143869</walkin:shape_area>
+			<walkin:atlas_page>9.00000000000</walkin:atlas_page>
+			<walkin:wia_tile>41.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.853907 47.059173 -95.853981 47.056755 -95.856965 47.056734 -95.861282 47.056743 -95.864491 47.056716 -95.864333 47.057747 -95.864371 47.058616 -95.863325 47.059747 -95.86326 47.060685 -95.864333 47.061503 -95.864252 47.06273 -95.864304 47.06388 -95.864312 47.06406 -95.864299 47.06406 -95.862157 47.064019 -95.8601 47.064008 -95.859601 47.063999 -95.858608 47.063981 -95.856474 47.063954 -95.853726 47.063976 -95.853744 47.062336 -95.853816 47.060888 -95.853838 47.060426 -95.853907 47.059173</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.10">
+			<walkin:gid>10</walkin:gid>
+			<walkin:cty_name>Big Stone</walkin:cty_name>
+			<walkin:map_title>Big Stone WIA #268 C</walkin:map_title>
+			<walkin:wia_id>wia60268c</walkin:wia_id>
+			<walkin:wia_pdf>wia60268c.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #268C</walkin:map_label_>
+			<walkin:gpsmapid>BIGS WIA 268C</walkin:gpsmapid>
+			<walkin:county_num>6</walkin:county_num>
+			<walkin:acres>3.01869826594</walkin:acres>
+			<walkin:shape_leng>546.529120746</walkin:shape_leng>
+			<walkin:shape_area>12216.2384648</walkin:shape_area>
+			<walkin:atlas_page>21.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>67.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-96.282258 45.369144 -96.28295 45.368867 -96.283611 45.368762 -96.28454 45.368761 -96.284956 45.368475 -96.284593 45.369183 -96.284453 45.36945 -96.282291 45.369393 -96.282258 45.369144</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.3">
+			<walkin:gid>3</walkin:gid>
+			<walkin:cty_name>Becker</walkin:cty_name>
+			<walkin:map_title>Becker WIA #302</walkin:map_title>
+			<walkin:wia_id>wia030302</walkin:wia_id>
+			<walkin:wia_pdf>wia030302.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #302</walkin:map_label_>
+			<walkin:gpsmapid>BECK WIA 302</walkin:gpsmapid>
+			<walkin:county_num>03</walkin:county_num>
+			<walkin:acres>117.967694356</walkin:acres>
+			<walkin:shape_leng>3470.69009749</walkin:shape_leng>
+			<walkin:shape_area>477398.321539</walkin:shape_area>
+			<walkin:atlas_page>9.00000000000</walkin:atlas_page>
+			<walkin:wia_tile>41.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.809837 47.09598 -95.807028 47.095994 -95.805355 47.096035 -95.804615 47.095719 -95.802484 47.096031 -95.802511 47.095476 -95.802666 47.094791 -95.803367 47.094162 -95.80371 47.092619 -95.806275 47.092637 -95.809016 47.092652 -95.810782 47.092558 -95.810992 47.090991 -95.81069 47.089436 -95.812181 47.089684 -95.814347 47.090069 -95.816404 47.090405 -95.816109 47.091632 -95.816131 47.092173 -95.815133 47.093125 -95.815517 47.094485 -95.816275 47.096137 -95.811281 47.096042 -95.809837 47.09598</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.4">
+			<walkin:gid>4</walkin:gid>
+			<walkin:cty_name>Becker</walkin:cty_name>
+			<walkin:map_title>Becker WIA #305N</walkin:map_title>
+			<walkin:wia_id>wia030305n</walkin:wia_id>
+			<walkin:wia_pdf>wia030305n.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #305N</walkin:map_label_>
+			<walkin:gpsmapid>BECK WIA 305N</walkin:gpsmapid>
+			<walkin:county_num>03</walkin:county_num>
+			<walkin:acres>17.1501126711</walkin:acres>
+			<walkin:shape_leng>1950.05555857</walkin:shape_leng>
+			<walkin:shape_area>69404.0436079</walkin:shape_area>
+			<walkin:atlas_page>9.00000000000</walkin:atlas_page>
+			<walkin:wia_tile>41.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-96.13487 46.849624 -96.134305 46.849011 -96.133756 46.848362 -96.135256 46.848344 -96.135229 46.849602 -96.13487 46.849624</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-96.13619 46.853018 -96.134303 46.852862 -96.133691 46.852804 -96.133773 46.851399 -96.135858 46.851337 -96.136383 46.851401 -96.136901 46.851567 -96.138599 46.852801 -96.136729 46.852847 -96.136697 46.854171 -96.136694 46.855397 -96.136282 46.8554 -96.136281 46.85328 -96.13619 46.853018</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.5">
+			<walkin:gid>5</walkin:gid>
+			<walkin:cty_name>Becker</walkin:cty_name>
+			<walkin:map_title>Becker WIA #305S</walkin:map_title>
+			<walkin:wia_id>wia030305s</walkin:wia_id>
+			<walkin:wia_pdf>wia030305s.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #305S</walkin:map_label_>
+			<walkin:gpsmapid>BECK WIA 305S</walkin:gpsmapid>
+			<walkin:county_num>03</walkin:county_num>
+			<walkin:acres>64.2099175711</walkin:acres>
+			<walkin:shape_leng>2788.44852261</walkin:shape_leng>
+			<walkin:shape_area>259848.317304</walkin:shape_area>
+			<walkin:atlas_page>9.00000000000</walkin:atlas_page>
+			<walkin:wia_tile>41.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-96.133765 46.848076 -96.133871 46.8462 -96.133901 46.844191 -96.134014 46.841127 -96.137308 46.841154 -96.137802 46.843458 -96.137965 46.843554 -96.138973 46.84402 -96.138979 46.844637 -96.14077 46.844688 -96.142781 46.844662 -96.142851 46.845253 -96.142832 46.845355 -96.142582 46.845461 -96.142109 46.845469 -96.14162 46.845432 -96.140795 46.845405 -96.140413 46.845543 -96.140411 46.846031 -96.139909 46.84608 -96.139608 46.845732 -96.137677 46.845716 -96.137009 46.84693 -96.136368 46.848105 -96.133765 46.848076</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.6">
+			<walkin:gid>6</walkin:gid>
+			<walkin:cty_name>Becker</walkin:cty_name>
+			<walkin:map_title>Becker WIA #305W</walkin:map_title>
+			<walkin:wia_id>wia030305w</walkin:wia_id>
+			<walkin:wia_pdf>wia030305w.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #305W</walkin:map_label_>
+			<walkin:gpsmapid>BECK WIA 305W</walkin:gpsmapid>
+			<walkin:county_num>03</walkin:county_num>
+			<walkin:acres>35.2815257471</walkin:acres>
+			<walkin:shape_leng>1655.71395829</walkin:shape_leng>
+			<walkin:shape_area>142779.269061</walkin:shape_area>
+			<walkin:atlas_page>9.00000000000</walkin:atlas_page>
+			<walkin:wia_tile>41.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-96.143712 46.848151 -96.143623 46.846982 -96.144804 46.847021 -96.145394 46.846681 -96.145382 46.844692 -96.147173 46.844674 -96.148554 46.844587 -96.149472 46.844635 -96.149627 46.847172 -96.149529 46.848217 -96.148079 46.848194 -96.146622 46.848173 -96.143712 46.848151</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.7">
+			<walkin:gid>7</walkin:gid>
+			<walkin:cty_name>Becker</walkin:cty_name>
+			<walkin:map_title>Becker WIA #373</walkin:map_title>
+			<walkin:wia_id>wia030373</walkin:wia_id>
+			<walkin:wia_pdf>wia030373.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #373</walkin:map_label_>
+			<walkin:gpsmapid>BECK WIA 373</walkin:gpsmapid>
+			<walkin:county_num>03</walkin:county_num>
+			<walkin:acres>131.495789443</walkin:acres>
+			<walkin:shape_leng>2977.96755725</walkin:shape_leng>
+			<walkin:shape_area>532144.580025</walkin:shape_area>
+			<walkin:atlas_page>10.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>42.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.290596 46.747302 -95.29081 46.74649 -95.292459 46.74656 -95.292328 46.745508 -95.294301 46.745334 -95.294491 46.745317 -95.295877 46.745339 -95.296412 46.745348 -95.296874 46.745723 -95.297495 46.746458 -95.29872 46.747246 -95.298657 46.748726 -95.298759 46.750995 -95.298823 46.752392 -95.298771 46.752393 -95.296833 46.752417 -95.296327 46.752423 -95.294347 46.75246 -95.292368 46.752438 -95.290364 46.752435 -95.289468 46.752432 -95.288541 46.752429 -95.288389 46.751041 -95.288401 46.749553 -95.288398 46.748113 -95.289832 46.748076 -95.290596 46.747302</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.8">
+			<walkin:gid>8</walkin:gid>
+			<walkin:cty_name>Becker</walkin:cty_name>
+			<walkin:map_title>Becker WIA #380</walkin:map_title>
+			<walkin:wia_id>wia030380</walkin:wia_id>
+			<walkin:wia_pdf>wia030380.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #380</walkin:map_label_>
+			<walkin:gpsmapid>BECK WIA 380</walkin:gpsmapid>
+			<walkin:county_num>03</walkin:county_num>
+			<walkin:acres>80.5759287214</walkin:acres>
+			<walkin:shape_leng>4399.01152540</walkin:shape_leng>
+			<walkin:shape_area>326079.214637</walkin:shape_area>
+			<walkin:atlas_page>9.00000000000</walkin:atlas_page>
+			<walkin:wia_tile>41.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-96.137677 46.845716 -96.139608 46.845732 -96.139909 46.84608 -96.139541 46.847653 -96.139583 46.848081 -96.138573 46.848112 -96.136368 46.848105 -96.137009 46.84693 -96.137677 46.845716</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-96.136697 46.85416 -96.136729 46.852879 -96.136729 46.852847 -96.138779 46.852865 -96.139782 46.852895 -96.140101 46.852905 -96.139862 46.851826 -96.139859 46.851812 -96.139334 46.84963 -96.136803 46.849603 -96.135238 46.849602 -96.135229 46.849602 -96.135256 46.848356 -96.135256 46.848344 -96.136845 46.848302 -96.139662 46.848413 -96.140626 46.848914 -96.141917 46.849081 -96.142983 46.848995 -96.143992 46.849018 -96.144052 46.849751 -96.144111 46.850474 -96.144175 46.852909 -96.144007 46.854713 -96.144006 46.854729 -96.143174 46.854739 -96.14296 46.854733 -96.142266 46.854715 -96.141643 46.853884 -96.139954 46.853392 -96.138683 46.853382 -96.137368 46.854437 -96.13709 46.855386 -96.136703 46.855397 -96.136694 46.855397 -96.136697 46.85416</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.9">
+			<walkin:gid>9</walkin:gid>
+			<walkin:cty_name>Big Stone</walkin:cty_name>
+			<walkin:map_title>Big Stone WIA #136</walkin:map_title>
+			<walkin:wia_id>wia60136</walkin:wia_id>
+			<walkin:wia_pdf>wia60136.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #136</walkin:map_label_>
+			<walkin:gpsmapid>BIGS WIA 136</walkin:gpsmapid>
+			<walkin:county_num>6</walkin:county_num>
+			<walkin:acres>158.453843160</walkin:acres>
+			<walkin:shape_leng>4401.63998721</walkin:shape_leng>
+			<walkin:shape_area>641239.952848</walkin:shape_area>
+			<walkin:atlas_page>21.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>67.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-96.344377 45.450533 -96.344321 45.44899 -96.346721 45.44888 -96.349192 45.44889 -96.349181 45.448791 -96.349165 45.448657 -96.349238 45.448655 -96.3522 45.448588 -96.352242 45.450296 -96.352393 45.452213 -96.352464 45.454015 -96.352549 45.45578 -96.35255 45.4558 -96.349813 45.455858 -96.346712 45.455926 -96.345532 45.455926 -96.344468 45.455927 -96.344405 45.454072 -96.344411 45.452678 -96.344377 45.450533</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-96.35449 45.456358 -96.354473 45.456048 -96.354492 45.456048 -96.355296 45.456032 -96.356802 45.456002 -96.359466 45.455955 -96.359516 45.457525 -96.359531 45.458009 -96.359571 45.459377 -96.359512 45.459379 -96.357024 45.459442 -96.354533 45.459499 -96.354542 45.457354 -96.35449 45.456358</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.11">
+			<walkin:gid>11</walkin:gid>
+			<walkin:cty_name>Big Stone</walkin:cty_name>
+			<walkin:map_title>Big Stone WIA #268 E</walkin:map_title>
+			<walkin:wia_id>wia60268e</walkin:wia_id>
+			<walkin:wia_pdf>wia60268e.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #268E</walkin:map_label_>
+			<walkin:gpsmapid>BIGS WIA 268E</walkin:gpsmapid>
+			<walkin:county_num>6</walkin:county_num>
+			<walkin:acres>36.1570465903</walkin:acres>
+			<walkin:shape_leng>1514.69025582</walkin:shape_leng>
+			<walkin:shape_area>146322.376209</walkin:shape_area>
+			<walkin:atlas_page>21.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>67.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-96.272039 45.367305 -96.272088 45.36599 -96.273926 45.365976 -96.275658 45.365963 -96.277183 45.365987 -96.277183 45.366024 -96.277173 45.367713 -96.27693 45.369283 -96.274409 45.369306 -96.272093 45.369306 -96.272039 45.367305</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.12">
+			<walkin:gid>12</walkin:gid>
+			<walkin:cty_name>Big Stone</walkin:cty_name>
+			<walkin:map_title>Big Stone WIA #268 W</walkin:map_title>
+			<walkin:wia_id>wia60268w</walkin:wia_id>
+			<walkin:wia_pdf>wia60268w.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #268W</walkin:map_label_>
+			<walkin:gpsmapid>BIGS WIA 268W</walkin:gpsmapid>
+			<walkin:county_num>6</walkin:county_num>
+			<walkin:acres>145.802235691</walkin:acres>
+			<walkin:shape_leng>3884.88376172</walkin:shape_leng>
+			<walkin:shape_area>590040.713905</walkin:shape_area>
+			<walkin:atlas_page>21.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>67.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-96.300388 45.365959 -96.295308 45.365886 -96.289642 45.366157 -96.287588 45.366082 -96.285344 45.366127 -96.284896 45.365105 -96.283715 45.364373 -96.283617 45.364313 -96.283716 45.364259 -96.284446 45.363857 -96.28524 45.363166 -96.285333 45.362681 -96.287585 45.362646 -96.288781 45.362638 -96.289815 45.362631 -96.292424 45.362647 -96.292859 45.36265 -96.29286 45.362649 -96.292861 45.362611 -96.292911 45.361266 -96.2955 45.361269 -96.297741 45.361286 -96.297743 45.361286 -96.297842 45.362529 -96.299827 45.362585 -96.302179 45.362672 -96.302703 45.362691 -96.302763 45.364065 -96.302644 45.366236 -96.300388 45.365959</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.13">
+			<walkin:gid>13</walkin:gid>
+			<walkin:cty_name>Blue Earth</walkin:cty_name>
+			<walkin:map_title>Blue Earth WIA #167N</walkin:map_title>
+			<walkin:wia_id>wia070167n</walkin:wia_id>
+			<walkin:wia_pdf>wia070167n.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #167N</walkin:map_label_>
+			<walkin:gpsmapid>BLUE WIA 167N</walkin:gpsmapid>
+			<walkin:county_num>07</walkin:county_num>
+			<walkin:acres>38.9224764493</walkin:acres>
+			<walkin:shape_leng>2231.02936093</walkin:shape_leng>
+			<walkin:shape_area>157513.673793</walkin:shape_area>
+			<walkin:atlas_page>37.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>89.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-94.359712 44.181163 -94.359653 44.179054 -94.359692 44.177683 -94.362116 44.177639 -94.36389 44.17763 -94.36398 44.179204 -94.363961 44.180635 -94.366765 44.180578 -94.368783 44.180566 -94.368788 44.180844 -94.368793 44.181106 -94.368793 44.181134 -94.368793 44.181134 -94.367196 44.181163 -94.36687 44.181169 -94.365105 44.181176 -94.365059 44.181176 -94.364873 44.181173 -94.363182 44.181146 -94.359712 44.181163</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.14">
+			<walkin:gid>14</walkin:gid>
+			<walkin:cty_name>Blue Earth</walkin:cty_name>
+			<walkin:map_title>Blue Earth WIA #167S</walkin:map_title>
+			<walkin:wia_id>wia070167s</walkin:wia_id>
+			<walkin:wia_pdf>wia070167s.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #167S</walkin:map_label_>
+			<walkin:gpsmapid>BLUE WIA 167S</walkin:gpsmapid>
+			<walkin:county_num>07</walkin:county_num>
+			<walkin:acres>9.86777650396</walkin:acres>
+			<walkin:shape_leng>982.242475072</walkin:shape_leng>
+			<walkin:shape_area>39933.4747196</walkin:shape_area>
+			<walkin:atlas_page>37.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>89.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-94.366804 44.168212 -94.36674 44.167473 -94.364679 44.167529 -94.364597 44.166748 -94.36681 44.16674 -94.368686 44.166737 -94.368706 44.166737 -94.368707 44.168209 -94.368707 44.168243 -94.368698 44.168243 -94.366804 44.168212</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.15">
+			<walkin:gid>15</walkin:gid>
+			<walkin:cty_name>Brown</walkin:cty_name>
+			<walkin:map_title>Brown WIA #78</walkin:map_title>
+			<walkin:wia_id>wia080078</walkin:wia_id>
+			<walkin:wia_pdf>wia080078.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #78</walkin:map_label_>
+			<walkin:gpsmapid>BROW WIA 78</walkin:gpsmapid>
+			<walkin:county_num>08</walkin:county_num>
+			<walkin:acres>87.9709312952</walkin:acres>
+			<walkin:shape_leng>3513.04070816</walkin:shape_leng>
+			<walkin:shape_area>356005.728297</walkin:shape_area>
+			<walkin:usernotes>Please access Brown WIA # 78 through Brown WIA # 171 off of 220th St.  Do not park on the driveway.</walkin:usernotes>
+			<walkin:atlas_page>31.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>81.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-94.649563 44.290167 -94.649686 44.288498 -94.651669 44.288501 -94.653185 44.288456 -94.654495 44.288453 -94.654668 44.288452 -94.654666 44.288326 -94.654649 44.287222 -94.654633 44.286162 -94.657058 44.286196 -94.65999 44.286197 -94.66199 44.286177 -94.66461 44.286202 -94.664631 44.286203 -94.664631 44.286451 -94.664611 44.286448 -94.664322 44.286399 -94.66367 44.286881 -94.663671 44.287175 -94.662453 44.28803 -94.661259 44.288364 -94.659241 44.288377 -94.659112 44.288995 -94.659082 44.289135 -94.657812 44.289397 -94.658004 44.290709 -94.657407 44.29074 -94.656406 44.289955 -94.654544 44.289933 -94.653749 44.290744 -94.653558 44.291525 -94.651659 44.291546 -94.649646 44.291566 -94.649563 44.290167</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.16">
+			<walkin:gid>16</walkin:gid>
+			<walkin:cty_name>Brown</walkin:cty_name>
+			<walkin:map_title>Brown WIA #166</walkin:map_title>
+			<walkin:wia_id>wia080166</walkin:wia_id>
+			<walkin:wia_pdf>wia080166.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #166</walkin:map_label_>
+			<walkin:gpsmapid>BROW WIA 166</walkin:gpsmapid>
+			<walkin:county_num>08</walkin:county_num>
+			<walkin:acres>55.7199515484</walkin:acres>
+			<walkin:shape_leng>1926.58863750</walkin:shape_leng>
+			<walkin:shape_area>225490.643779</walkin:shape_area>
+			<walkin:atlas_page>36.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>88.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-94.793904 44.168553 -94.795995 44.168464 -94.798558 44.168435 -94.798558 44.168435 -94.798615 44.17062 -94.798615 44.172158 -94.798638 44.172698 -94.798621 44.173755 -94.797024 44.173926 -94.795542 44.173905 -94.794011 44.173889 -94.793932 44.17257 -94.79389 44.170926 -94.793869 44.170281 -94.793904 44.168553</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.17">
+			<walkin:gid>17</walkin:gid>
+			<walkin:cty_name>Brown</walkin:cty_name>
+			<walkin:map_title>Brown WIA #170</walkin:map_title>
+			<walkin:wia_id>wia080170</walkin:wia_id>
+			<walkin:wia_pdf>wia080170.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #170</walkin:map_label_>
+			<walkin:gpsmapid>BROW WIA 170</walkin:gpsmapid>
+			<walkin:county_num>08</walkin:county_num>
+			<walkin:acres>37.8641222101</walkin:acres>
+			<walkin:shape_leng>1547.68326144</walkin:shape_leng>
+			<walkin:shape_area>153230.666145</walkin:shape_area>
+			<walkin:atlas_page>36.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>88.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-94.799004 44.166439 -94.800902 44.166397 -94.803183 44.166409 -94.803791 44.166609 -94.803796 44.16661 -94.803801 44.167092 -94.803853 44.168285 -94.803892 44.169976 -94.803892 44.169994 -94.801352 44.170006 -94.799064 44.170016 -94.799012 44.167448 -94.799004 44.166439</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.18">
+			<walkin:gid>18</walkin:gid>
+			<walkin:cty_name>Brown</walkin:cty_name>
+			<walkin:map_title>Brown WIA #171</walkin:map_title>
+			<walkin:wia_id>wia080171</walkin:wia_id>
+			<walkin:wia_pdf>wia080171.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #171</walkin:map_label_>
+			<walkin:gpsmapid>BROW WIA 171</walkin:gpsmapid>
+			<walkin:county_num>08</walkin:county_num>
+			<walkin:acres>74.6806652464</walkin:acres>
+			<walkin:shape_leng>2371.72750430</walkin:shape_leng>
+			<walkin:shape_area>302221.929781</walkin:shape_area>
+			<walkin:atlas_page>31.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>81.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-94.654625 44.284294 -94.654653 44.282712 -94.656042 44.283168 -94.657074 44.282706 -94.659747 44.282699 -94.662359 44.282705 -94.664416 44.282757 -94.664573 44.282761 -94.664605 44.283493 -94.664653 44.284591 -94.664623 44.286159 -94.66461 44.286159 -94.66199 44.286177 -94.65999 44.286197 -94.657058 44.286196 -94.654633 44.286125 -94.654625 44.284294</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.19">
+			<walkin:gid>19</walkin:gid>
+			<walkin:cty_name>Brown</walkin:cty_name>
+			<walkin:map_title>Brown WIA #173</walkin:map_title>
+			<walkin:wia_id>wia080173</walkin:wia_id>
+			<walkin:wia_pdf>wia080173.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #173</walkin:map_label_>
+			<walkin:gpsmapid>BROW WIA 173</walkin:gpsmapid>
+			<walkin:county_num>08</walkin:county_num>
+			<walkin:acres>40.2193841149</walkin:acres>
+			<walkin:shape_leng>2483.09347449</walkin:shape_leng>
+			<walkin:shape_area>162762.072910</walkin:shape_area>
+			<walkin:atlas_page>36.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>88.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-94.900022 44.161698 -94.897028 44.16117 -94.897068 44.160788 -94.897168 44.16075 -94.897256 44.160721 -94.898375 44.16048 -94.898576 44.16025 -94.894517 44.16025 -94.892464 44.160288 -94.890311 44.160296 -94.890253 44.159507 -94.890335 44.158583 -94.893855 44.158546 -94.895902 44.158527 -94.898126 44.158545 -94.900093 44.158513 -94.900045 44.159326 -94.89926 44.159712 -94.899038 44.160799 -94.90005 44.161557 -94.900022 44.161698</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.20">
+			<walkin:gid>20</walkin:gid>
+			<walkin:cty_name>Brown</walkin:cty_name>
+			<walkin:map_title>Brown WIA #323</walkin:map_title>
+			<walkin:wia_id>wia080323</walkin:wia_id>
+			<walkin:wia_pdf>wia080323.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #323</walkin:map_label_>
+			<walkin:gpsmapid>BROW WIA 323</walkin:gpsmapid>
+			<walkin:county_num>08</walkin:county_num>
+			<walkin:acres>305.259608141</walkin:acres>
+			<walkin:shape_leng>6771.68632889</walkin:shape_leng>
+			<walkin:shape_area>1235341.80570</walkin:shape_area>
+			<walkin:usernotes>Road on the WIA open to hunters.  Access from the SW corner of unit via 305th St.</walkin:usernotes>
+			<walkin:atlas_page>31.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>81.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-94.86938 44.499191 -94.867325 44.49811 -94.86661 44.497946 -94.86596 44.497952 -94.865593 44.497815 -94.865576 44.497809 -94.865564 44.4978 -94.865064 44.497417 -94.864698 44.496887 -94.864717 44.496243 -94.864697 44.495929 -94.864389 44.495663 -94.864124 44.495481 -94.863255 44.495152 -94.862734 44.495111 -94.861909 44.494903 -94.86163 44.494751 -94.860935 44.49474 -94.858903 44.494381 -94.856744 44.494615 -94.856258 44.494595 -94.855835 44.494618 -94.855519 44.494635 -94.853685 44.495149 -94.853405 44.495181 -94.852566 44.495313 -94.851898 44.495198 -94.851897 44.495197 -94.851897 44.495197 -94.851897 44.495178 -94.851895 44.495175 -94.851686 44.494898 -94.851751 44.494453 -94.851901 44.494137 -94.852692 44.493588 -94.85352 44.493231 -94.854194 44.493092 -94.854293 44.493063 -94.854332 44.493052 -94.85445 44.49301 -94.85463 44.492992 -94.854888 44.492923 -94.855298 44.492659 -94.855485 44.492427 -94.855512 44.492062 -94.855538 44.491705 -94.855361 44.491098 -94.854546 44.490035 -94.854193 44.489766 -94.854181 44.489757 -94.854768 44.489759 -94.855699 44.489764 -94.855847 44.489758 -94.856241 44.489743 -94.856208 44.488439 -94.856201 44.487717 -94.856297 44.487008 -94.856844 44.487128 -94.859002 44.487966 -94.860517 44.488663 -94.861581 44.489071 -94.861987 44.489277 -94.862282 44.489437 -94.863879 44.490299 -94.865575 44.490881 -94.865793 44.490823 -94.866346 44.490787 -94.865872 44.490495 -94.866132 44.490104 -94.865573 44.489879 -94.865564 44.489876 -94.865564 44.489664 -94.865572 44.489664 -94.866014 44.489646 -94.867109 44.489378 -94.868386 44.489332 -94.868401 44.490372 -94.867586 44.490723 -94.867832 44.491723 -94.868136 44.491812 -94.868515 44.49172 -94.869048 44.491619 -94.869517 44.491591 -94.869891 44.491569 -94.870512 44.491609 -94.870998 44.491653 -94.871586 44.491997 -94.872423 44.492156 -94.873348 44.492309 -94.8734 44.492865 -94.873884 44.493558 -94.874591 44.493832 -94.875464 44.494293 -94.875577 44.494797 -94.875581 44.494817 -94.875604 44.494919 -94.875559 44.49529 -94.875557 44.49531 -94.875519 44.495621 -94.8755 44.495941 -94.875439 44.496943 -94.875485 44.49959 -94.875033 44.49961 -94.874605 44.49963 -94.874238 44.499612 -94.874237 44.49961 -94.873848 44.498968 -94.873258 44.498463 -94.872764 44.498351 -94.871905 44.498306 -94.871255 44.498299 -94.870969 44.498958 -94.870887 44.499312 -94.870953 44.499477 -94.871078 44.49979 -94.871049 44.500055 -94.871051 44.500055 -94.870917 44.500322 -94.870729 44.500444 -94.870372 44.500459 -94.870235 44.500465 -94.869975 44.500009 -94.869881 44.499898 -94.869779 44.499778 -94.869577 44.49954 -94.869546 44.499485 -94.86938 44.499191</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.21">
+			<walkin:gid>21</walkin:gid>
+			<walkin:cty_name>Brown</walkin:cty_name>
+			<walkin:map_title>Brown WIA #324</walkin:map_title>
+			<walkin:wia_id>wia080324</walkin:wia_id>
+			<walkin:wia_pdf>wia080324.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #324</walkin:map_label_>
+			<walkin:gpsmapid>BROW WIA 324</walkin:gpsmapid>
+			<walkin:county_num>08</walkin:county_num>
+			<walkin:acres>81.9669421331</walkin:acres>
+			<walkin:shape_leng>4785.29999366</walkin:shape_leng>
+			<walkin:shape_area>331708.446195</walkin:shape_area>
+			<walkin:usernotes>Road to parking available to hunters on WIA.  Access from east side of the WIA from 420th St.</walkin:usernotes>
+			<walkin:atlas_page>31.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>81.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-94.825708 44.481817 -94.825576 44.481516 -94.825706 44.481649 -94.826633 44.48259 -94.825865 44.482985 -94.825876 44.482198 -94.825708 44.481817</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-94.838415 44.485543 -94.838408 44.485084 -94.835754 44.485091 -94.83575 44.485087 -94.835425 44.484814 -94.834488 44.484227 -94.833606 44.484342 -94.833105 44.484408 -94.832575 44.484357 -94.831543 44.484538 -94.831253 44.484857 -94.830872 44.485091 -94.829237 44.485079 -94.829056 44.484713 -94.828895 44.484389 -94.829048 44.483497 -94.826904 44.482597 -94.826046 44.48147 -94.825957 44.481353 -94.825889 44.478768 -94.825887 44.478655 -94.826342 44.478864 -94.827577 44.47943 -94.827914 44.479585 -94.82902 44.480174 -94.83001 44.480246 -94.830016 44.480247 -94.829828 44.480887 -94.830176 44.481336 -94.830206 44.481375 -94.830796 44.481436 -94.830828 44.481439 -94.830827 44.481466 -94.830815 44.482281 -94.830807 44.482778 -94.830954 44.482788 -94.832263 44.48288 -94.832929 44.483052 -94.833522 44.483205 -94.834068 44.483345 -94.834429 44.483496 -94.834577 44.483557 -94.836831 44.483743 -94.839508 44.483947 -94.840416 44.483926 -94.84131 44.483764 -94.841969 44.483645 -94.843206 44.484016 -94.844825 44.484646 -94.84532 44.484782 -94.846123 44.485003 -94.846206 44.485026 -94.846123 44.485025 -94.845984 44.485024 -94.845458 44.485018 -94.841028 44.485081 -94.841029 44.485887 -94.840352 44.485841 -94.839498 44.485692 -94.838415 44.485543</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.22">
+			<walkin:gid>22</walkin:gid>
+			<walkin:cty_name>Brown</walkin:cty_name>
+			<walkin:map_title>Brown WIA #375</walkin:map_title>
+			<walkin:wia_id>wia080375</walkin:wia_id>
+			<walkin:wia_pdf>wia080375.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #375</walkin:map_label_>
+			<walkin:gpsmapid>BROW WIA 375</walkin:gpsmapid>
+			<walkin:county_num>08</walkin:county_num>
+			<walkin:acres>47.2118421462</walkin:acres>
+			<walkin:shape_leng>2062.33584768</walkin:shape_leng>
+			<walkin:shape_area>191059.546602</walkin:shape_area>
+			<walkin:atlas_page>36.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>88.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-94.794114 44.17974 -94.794266 44.178165 -94.794128 44.176612 -94.79402 44.175236 -94.794011 44.173889 -94.795542 44.173905 -94.797024 44.173926 -94.798621 44.173755 -94.797685 44.174143 -94.797516 44.175348 -94.798001 44.176595 -94.79863 44.177227 -94.798645 44.177497 -94.798661 44.179046 -94.796202 44.179029 -94.794872 44.179713 -94.794114 44.17974</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.129">
+			<walkin:gid>129</walkin:gid>
+			<walkin:cty_name>Meeker</walkin:cty_name>
+			<walkin:map_title>Meeker WIA #103 S</walkin:map_title>
+			<walkin:wia_id>wia470103s</walkin:wia_id>
+			<walkin:wia_pdf>wia470103S.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #103S</walkin:map_label_>
+			<walkin:gpsmapid>MEEK WIA 103S</walkin:gpsmapid>
+			<walkin:county_num>47</walkin:county_num>
+			<walkin:acres>5.01866189879</walkin:acres>
+			<walkin:shape_leng>587.515610742</walkin:shape_leng>
+			<walkin:shape_area>20309.8041371</walkin:shape_area>
+			<walkin:atlas_page>24.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>70.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-94.301948 45.163571 -94.303686 45.163518 -94.303194 45.165119 -94.301977 45.16513 -94.301948 45.163571</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.23">
+			<walkin:gid>23</walkin:gid>
+			<walkin:cty_name>Chippewa</walkin:cty_name>
+			<walkin:map_title>Chippewa WIA #216</walkin:map_title>
+			<walkin:wia_id>wia120216</walkin:wia_id>
+			<walkin:wia_pdf>wia120216.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #216</walkin:map_label_>
+			<walkin:gpsmapid>CHIP WIA 216</walkin:gpsmapid>
+			<walkin:county_num>12</walkin:county_num>
+			<walkin:acres>114.550659236</walkin:acres>
+			<walkin:shape_leng>3145.74612565</walkin:shape_leng>
+			<walkin:shape_area>463570.071020</walkin:shape_area>
+			<walkin:atlas_page>26.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>74.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.513904 44.869231 -95.513904 44.869213 -95.515927 44.869213 -95.517342 44.869265 -95.518799 44.869319 -95.518835 44.871123 -95.51885 44.871534 -95.518902 44.872919 -95.518903 44.872956 -95.522052 44.872999 -95.523899 44.87301 -95.523905 44.874892 -95.523816 44.876488 -95.520952 44.87645 -95.517182 44.876436 -95.513975 44.876364 -95.513917 44.875219 -95.513899 44.874853 -95.513926 44.872901 -95.513927 44.871277 -95.513904 44.869231</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.24">
+			<walkin:gid>24</walkin:gid>
+			<walkin:cty_name>Chippewa</walkin:cty_name>
+			<walkin:map_title>Chippewa WIA #227</walkin:map_title>
+			<walkin:wia_id>wia120227</walkin:wia_id>
+			<walkin:wia_pdf>wia120227.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #227</walkin:map_label_>
+			<walkin:gpsmapid>CHIP WIA 227</walkin:gpsmapid>
+			<walkin:county_num>12</walkin:county_num>
+			<walkin:acres>40.1612148700</walkin:acres>
+			<walkin:shape_leng>2093.47890411</walkin:shape_leng>
+			<walkin:shape_area>162526.670328</walkin:shape_area>
+			<walkin:atlas_page>26.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>74.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.411857 44.941856 -95.411857 44.941856 -95.411899 44.941856 -95.412453 44.941855 -95.412569 44.94207 -95.413921 44.943763 -95.414818 44.944983 -95.414827 44.946286 -95.414818 44.947714 -95.416236 44.94776 -95.416253 44.948833 -95.414138 44.948853 -95.411937 44.948837 -95.41192 44.948559 -95.411824 44.946986 -95.411877 44.944264 -95.411857 44.941856</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.25">
+			<walkin:gid>25</walkin:gid>
+			<walkin:cty_name>Chippewa</walkin:cty_name>
+			<walkin:map_title>Chippewa WIA #228</walkin:map_title>
+			<walkin:wia_id>wia120228</walkin:wia_id>
+			<walkin:wia_pdf>wia120228.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #228</walkin:map_label_>
+			<walkin:gpsmapid>CHIP WIA 228</walkin:gpsmapid>
+			<walkin:county_num>12</walkin:county_num>
+			<walkin:acres>25.7167112523</walkin:acres>
+			<walkin:shape_leng>1632.77362889</walkin:shape_leng>
+			<walkin:shape_area>104071.838094</walkin:shape_area>
+			<walkin:atlas_page>27.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>75.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.248121 44.999598 -95.248132 44.999478 -95.250626 44.999959 -95.252447 45.000354 -95.255712 45.000976 -95.255711 45.000995 -95.255615 45.002703 -95.255013 45.002464 -95.254563 45.002358 -95.252387 45.002236 -95.250435 45.002093 -95.250069 45.001226 -95.249724 45.000551 -95.248067 45.000254 -95.248064 45.000253 -95.248068 45.000213 -95.248099 44.99986 -95.248121 44.999598</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.26">
+			<walkin:gid>26</walkin:gid>
+			<walkin:cty_name>Clay</walkin:cty_name>
+			<walkin:map_title>Clay WIA #384</walkin:map_title>
+			<walkin:wia_id>wia140384</walkin:wia_id>
+			<walkin:wia_pdf>wia140384.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #384</walkin:map_label_>
+			<walkin:gpsmapid>CLAY WIA 384</walkin:gpsmapid>
+			<walkin:county_num>14</walkin:county_num>
+			<walkin:acres>137.072033349</walkin:acres>
+			<walkin:shape_leng>2997.52453948</walkin:shape_leng>
+			<walkin:shape_area>554710.838490</walkin:shape_area>
+			<walkin:atlas_page>11.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>47.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-96.397063 46.63244 -96.397129 46.630868 -96.399343 46.630908 -96.402044 46.630902 -96.404321 46.630885 -96.404409 46.630885 -96.404331 46.632333 -96.404283 46.633787 -96.404228 46.635605 -96.404162 46.636693 -96.402521 46.637836 -96.400371 46.637786 -96.397964 46.637765 -96.395679 46.637733 -96.394137 46.637697 -96.393821 46.636718 -96.393794 46.636636 -96.393831 46.635893 -96.393877 46.634968 -96.393945 46.632725 -96.395554 46.632507 -96.397063 46.63244</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.27">
+			<walkin:gid>27</walkin:gid>
+			<walkin:cty_name>Clay</walkin:cty_name>
+			<walkin:map_title>Clay WIA #385</walkin:map_title>
+			<walkin:wia_id>wia140385</walkin:wia_id>
+			<walkin:wia_pdf>wia140385.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #385</walkin:map_label_>
+			<walkin:gpsmapid>CLAY WIA 385</walkin:gpsmapid>
+			<walkin:county_num>14</walkin:county_num>
+			<walkin:acres>37.7670803961</walkin:acres>
+			<walkin:shape_leng>1552.50763444</walkin:shape_leng>
+			<walkin:shape_area>152837.951857</walkin:shape_area>
+			<walkin:atlas_page>11.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>47.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-96.462493 46.66161 -96.46252 46.65986 -96.462665 46.659859 -96.465095 46.659836 -96.467495 46.65986 -96.467602 46.660742 -96.467716 46.661679 -96.46782 46.663261 -96.467624 46.663266 -96.466544 46.663295 -96.465037 46.663335 -96.462558 46.663359 -96.462556 46.663306 -96.462493 46.66161</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.28">
+			<walkin:gid>28</walkin:gid>
+			<walkin:cty_name>Clay</walkin:cty_name>
+			<walkin:map_title>Clay WIA #124</walkin:map_title>
+			<walkin:wia_id>wia140124</walkin:wia_id>
+			<walkin:wia_pdf>wia140124.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #124</walkin:map_label_>
+			<walkin:gpsmapid>CLAY WIA 124</walkin:gpsmapid>
+			<walkin:county_num>14</walkin:county_num>
+			<walkin:acres>110.805560622</walkin:acres>
+			<walkin:shape_leng>2819.27478714</walkin:shape_leng>
+			<walkin:shape_area>448414.194640</walkin:shape_area>
+			<walkin:usernotes>Access to this site posted from 190th St. N/Cty Rd 113 leading to the SE corner of the WIA by foot.  Park on the road away from the field access and respect adjacent private property.</walkin:usernotes>
+			<walkin:atlas_page>8.00000000000</walkin:atlas_page>
+			<walkin:wia_tile>40.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-96.414175 46.897649 -96.41417 46.896475 -96.413342 46.896502 -96.413352 46.895068 -96.413228 46.893712 -96.413118 46.892428 -96.413105 46.892428 -96.412239 46.892427 -96.412239 46.892411 -96.412248 46.89058 -96.412662 46.890558 -96.414282 46.890471 -96.416003 46.89045 -96.416128 46.890448 -96.417512 46.890429 -96.4202 46.890375 -96.420349 46.89051 -96.420464 46.890613 -96.420473 46.890621 -96.420512 46.891887 -96.420522 46.893824 -96.420529 46.894063 -96.420575 46.895701 -96.420595 46.897531 -96.420579 46.897531 -96.418558 46.897573 -96.416017 46.897614 -96.414175 46.897649</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.29">
+			<walkin:gid>29</walkin:gid>
+			<walkin:cty_name>Clay</walkin:cty_name>
+			<walkin:map_title>Clay WIA #337</walkin:map_title>
+			<walkin:wia_id>wia140337</walkin:wia_id>
+			<walkin:wia_pdf>wia140337.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #337</walkin:map_label_>
+			<walkin:gpsmapid>CLAY WIA 337</walkin:gpsmapid>
+			<walkin:county_num>14</walkin:county_num>
+			<walkin:acres>66.8394254772</walkin:acres>
+			<walkin:shape_leng>2229.37073126</walkin:shape_leng>
+			<walkin:shape_area>270489.558261</walkin:shape_area>
+			<walkin:usernotes>Site within the Clay County State Game Refuge. Closed to waterfowl hunting during the regular waterfowl season.   Check regulations for further verification.</walkin:usernotes>
+			<walkin:atlas_page>8.00000000000</walkin:atlas_page>
+			<walkin:wia_tile>40.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-96.484199 46.912581 -96.48203 46.912532 -96.479387 46.912577 -96.47927 46.910886 -96.479192 46.907662 -96.479254 46.906423 -96.479157 46.90548 -96.48097 46.90563 -96.481345 46.905855 -96.482637 46.906691 -96.484103 46.906759 -96.484219 46.907771 -96.484225 46.907821 -96.48422 46.909357 -96.484245 46.911156 -96.484199 46.912581</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.30">
+			<walkin:gid>30</walkin:gid>
+			<walkin:cty_name>Clay</walkin:cty_name>
+			<walkin:map_title>Clay WIA #338</walkin:map_title>
+			<walkin:wia_id>wia140338</walkin:wia_id>
+			<walkin:wia_pdf>wia140338.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #338</walkin:map_label_>
+			<walkin:gpsmapid>CLAY WIA 338</walkin:gpsmapid>
+			<walkin:county_num>14</walkin:county_num>
+			<walkin:acres>152.470539830</walkin:acres>
+			<walkin:shape_leng>3143.27877236</walkin:shape_leng>
+			<walkin:shape_area>617026.383338</walkin:shape_area>
+			<walkin:atlas_page>8.00000000000</walkin:atlas_page>
+			<walkin:wia_tile>40.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-96.322421 47.071386 -96.322421 47.071383 -96.325034 47.071358 -96.327877 47.071384 -96.3297 47.071385 -96.330703 47.071386 -96.33093 47.071385 -96.332737 47.071378 -96.332737 47.071385 -96.332731 47.072563 -96.332734 47.073715 -96.332751 47.076882 -96.332757 47.078445 -96.332697 47.078445 -96.330251 47.078442 -96.327508 47.078436 -96.325422 47.078435 -96.322393 47.07845 -96.322428 47.075517 -96.322378 47.073993 -96.322399 47.072513 -96.322421 47.071386</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.31">
+			<walkin:gid>31</walkin:gid>
+			<walkin:cty_name>Clay</walkin:cty_name>
+			<walkin:map_title>Clay WIA #339 N</walkin:map_title>
+			<walkin:wia_id>wia140339n</walkin:wia_id>
+			<walkin:wia_pdf>wia140339n.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #339N</walkin:map_label_>
+			<walkin:gpsmapid>CLAY WIA 339N</walkin:gpsmapid>
+			<walkin:county_num>14</walkin:county_num>
+			<walkin:acres>73.6868581670</walkin:acres>
+			<walkin:shape_leng>2296.67587234</walkin:shape_leng>
+			<walkin:shape_area>298200.135220</walkin:shape_area>
+			<walkin:atlas_page>11.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>47.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-96.363234 46.674401 -96.365937 46.674302 -96.368305 46.67433 -96.368189 46.676598 -96.368232 46.677911 -96.368015 46.679587 -96.367912 46.681286 -96.36566 46.681306 -96.363119 46.681291 -96.363059 46.678934 -96.363116 46.676888 -96.363108 46.675699 -96.363234 46.674401</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.32">
+			<walkin:gid>32</walkin:gid>
+			<walkin:cty_name>Clay</walkin:cty_name>
+			<walkin:map_title>Clay WIA #339 S</walkin:map_title>
+			<walkin:wia_id>wia140339s</walkin:wia_id>
+			<walkin:wia_pdf>wia140339s.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #339S</walkin:map_label_>
+			<walkin:gpsmapid>CLAY WIA 339S</walkin:gpsmapid>
+			<walkin:county_num>14</walkin:county_num>
+			<walkin:acres>358.133117823</walkin:acres>
+			<walkin:shape_leng>5393.93305619</walkin:shape_leng>
+			<walkin:shape_area>1449313.30794</walkin:shape_area>
+			<walkin:atlas_page>11.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>47.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-96.364443 46.661064 -96.3652 46.660059 -96.368099 46.660058 -96.370434 46.660018 -96.373327 46.65992 -96.373382 46.66184 -96.373428 46.663772 -96.373436 46.664098 -96.373503 46.66688 -96.376028 46.666853 -96.378789 46.666846 -96.37879 46.666872 -96.378841 46.66962 -96.378822 46.671672 -96.378818 46.67212 -96.378771 46.673954 -96.375958 46.673979 -96.373764 46.673992 -96.371079 46.674007 -96.368946 46.674022 -96.366301 46.674034 -96.363306 46.674039 -96.363196 46.672039 -96.363114 46.669982 -96.363073 46.668357 -96.364714 46.667069 -96.36471 46.66697 -96.364653 46.665238 -96.364759 46.662795 -96.364443 46.661064</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.33">
+			<walkin:gid>33</walkin:gid>
+			<walkin:cty_name>Clay</walkin:cty_name>
+			<walkin:map_title>Clay WIA #340</walkin:map_title>
+			<walkin:wia_id>wia140340</walkin:wia_id>
+			<walkin:wia_pdf>wia140340.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #340</walkin:map_label_>
+			<walkin:gpsmapid>CLAY WIA 340</walkin:gpsmapid>
+			<walkin:county_num>14</walkin:county_num>
+			<walkin:acres>38.5120339359</walkin:acres>
+			<walkin:shape_leng>1576.73562739</walkin:shape_leng>
+			<walkin:shape_area>155852.671872</walkin:shape_area>
+			<walkin:usernotes>WIA signs have not been posted along the SE corner and east boundary due to wet conditions.  Use existing signs and reference the ditch on the east side of the unit as the boundary.</walkin:usernotes>
+			<walkin:atlas_page>5.00000000000</walkin:atlas_page>
+			<walkin:wia_tile>32.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-96.721898 47.122128 -96.721881 47.118683 -96.725171 47.118633 -96.727193 47.118635 -96.727186 47.120154 -96.727189 47.122126 -96.724569 47.122135 -96.721898 47.122128</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.34">
+			<walkin:gid>34</walkin:gid>
+			<walkin:cty_name>Cottonwood</walkin:cty_name>
+			<walkin:map_title>Cottonwood WIA #159</walkin:map_title>
+			<walkin:wia_id>wia170159</walkin:wia_id>
+			<walkin:wia_pdf>wia170159.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #159</walkin:map_label_>
+			<walkin:gpsmapid>COTT WIA 159</walkin:gpsmapid>
+			<walkin:county_num>17</walkin:county_num>
+			<walkin:acres>3.42317274056</walkin:acres>
+			<walkin:shape_leng>1431.08153373</walkin:shape_leng>
+			<walkin:shape_area>13853.0885900</walkin:shape_area>
+			<walkin:usernotes>Access to this site posted from 368th Ave leading to the north end of the WIA by foot from Hurricane Lake WMA.  Parking is available off the WMA road providing water access to Hurricane Lake.</walkin:usernotes>
+			<walkin:atlas_page>35.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>87.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.335857 44.103734 -95.335781 44.103714 -95.335497 44.103749 -95.335475 44.103682 -95.335897 44.103609 -95.336221 44.103399 -95.3365 44.102758 -95.33692 44.101981 -95.337754 44.101999 -95.337637 44.102099 -95.337138 44.102167 -95.336684 44.102855 -95.336428 44.103489 -95.336415 44.103663 -95.336385 44.103918 -95.336651 44.104275 -95.336885 44.104461 -95.33709 44.10456 -95.338256 44.105016 -95.338481 44.105208 -95.338862 44.105433 -95.339494 44.105902 -95.339872 44.106184 -95.339779 44.106198 -95.339479 44.106242 -95.339076 44.105824 -95.338251 44.105317 -95.336799 44.104666 -95.336774 44.104622 -95.336407 44.104152 -95.336277 44.103951 -95.336194 44.103823 -95.336193 44.103823 -95.335857 44.103734</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.35">
+			<walkin:gid>35</walkin:gid>
+			<walkin:cty_name>Cottonwood</walkin:cty_name>
+			<walkin:map_title>Cottonwood WIA #163</walkin:map_title>
+			<walkin:wia_id>wia170163</walkin:wia_id>
+			<walkin:wia_pdf>wia170163.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #163</walkin:map_label_>
+			<walkin:gpsmapid>COTT WIA 163</walkin:gpsmapid>
+			<walkin:county_num>17</walkin:county_num>
+			<walkin:acres>1.63366586738</walkin:acres>
+			<walkin:shape_leng>751.799760005</walkin:shape_leng>
+			<walkin:shape_area>6611.21120733</walkin:shape_area>
+			<walkin:usernotes>Access to this site posted from 368th Ave leading to the north end of the WIA via road leading to the Hurricane Lake Water Access.  Parking is available off the WMA road.</walkin:usernotes>
+			<walkin:atlas_page>35.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>87.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.342283 44.109376 -95.341829 44.109088 -95.342289 44.109133 -95.342417 44.109265 -95.34252 44.109587 -95.342535 44.109931 -95.342468 44.110481 -95.342499 44.110885 -95.342615 44.111005 -95.342568 44.111275 -95.342421 44.111325 -95.342218 44.111585 -95.342084 44.111849 -95.342001 44.112105 -95.342 44.112109 -95.341941 44.112107 -95.341941 44.112105 -95.342042 44.111597 -95.342065 44.11148 -95.342104 44.111453 -95.342193 44.111393 -95.34219 44.111256 -95.342188 44.111169 -95.342217 44.110628 -95.342283 44.109376</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.36">
+			<walkin:gid>36</walkin:gid>
+			<walkin:cty_name>Cottonwood</walkin:cty_name>
+			<walkin:map_title>Cottonwood WIA #175</walkin:map_title>
+			<walkin:wia_id>wia170175</walkin:wia_id>
+			<walkin:wia_pdf>wia170175.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #175</walkin:map_label_>
+			<walkin:gpsmapid>COTT WIA 175</walkin:gpsmapid>
+			<walkin:county_num>17</walkin:county_num>
+			<walkin:acres>21.0983269538</walkin:acres>
+			<walkin:shape_leng>1340.54939331</walkin:shape_leng>
+			<walkin:shape_area>85381.8999349</walkin:shape_area>
+			<walkin:atlas_page>36.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>88.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.200284 43.864899 -95.200301 43.865913 -95.2003 43.866574 -95.200302 43.867979 -95.200293 43.869159 -95.200221 43.869184 -95.199117 43.867989 -95.197496 43.868091 -95.19723 43.868058 -95.197195 43.867575 -95.197324 43.867218 -95.19733 43.86682 -95.197275 43.866528 -95.197414 43.866171 -95.198052 43.865399 -95.198169 43.864824 -95.198659 43.864774 -95.200284 43.864899</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.37">
+			<walkin:gid>37</walkin:gid>
+			<walkin:cty_name>Cottonwood</walkin:cty_name>
+			<walkin:map_title>Cottonwood WIA #196</walkin:map_title>
+			<walkin:wia_id>wia170196</walkin:wia_id>
+			<walkin:wia_pdf>wia170196.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #196</walkin:map_label_>
+			<walkin:gpsmapid>COTT WIA 196</walkin:gpsmapid>
+			<walkin:county_num>17</walkin:county_num>
+			<walkin:acres>76.1871687741</walkin:acres>
+			<walkin:shape_leng>2360.67732465</walkin:shape_leng>
+			<walkin:shape_area>308318.533259</walkin:shape_area>
+			<walkin:atlas_page>36.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>88.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.076095 44.024906 -95.072799 44.024885 -95.069919 44.0249 -95.069866 44.02307 -95.069902 44.021372 -95.073681 44.021403 -95.073746 44.021404 -95.079754 44.021423 -95.079819 44.023168 -95.079825 44.024885 -95.076095 44.024906</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.38">
+			<walkin:gid>38</walkin:gid>
+			<walkin:cty_name>Cottonwood</walkin:cty_name>
+			<walkin:map_title>Cottonwood WIA #249</walkin:map_title>
+			<walkin:wia_id>wia170249</walkin:wia_id>
+			<walkin:wia_pdf>wia170249.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #249</walkin:map_label_>
+			<walkin:gpsmapid>COTT WIA 249</walkin:gpsmapid>
+			<walkin:county_num>17</walkin:county_num>
+			<walkin:acres>59.8763970977</walkin:acres>
+			<walkin:shape_leng>2196.64367759</walkin:shape_leng>
+			<walkin:shape_area>242311.182146</walkin:shape_area>
+			<walkin:atlas_page>36.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>88.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.201964 44.166022 -95.201926 44.164268 -95.20535 44.163109 -95.207395 44.162444 -95.209677 44.162439 -95.211765 44.162458 -95.211797 44.162458 -95.211839 44.164091 -95.211824 44.165257 -95.211784 44.165258 -95.209817 44.165287 -95.207831 44.165317 -95.207826 44.165929 -95.204373 44.165997 -95.202242 44.16602 -95.201964 44.166022</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.39">
+			<walkin:gid>39</walkin:gid>
+			<walkin:cty_name>Cottonwood</walkin:cty_name>
+			<walkin:map_title>Cottonwood WIA #263</walkin:map_title>
+			<walkin:wia_id>wia170263</walkin:wia_id>
+			<walkin:wia_pdf>wia170263.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #263</walkin:map_label_>
+			<walkin:gpsmapid>COTT WIA 263</walkin:gpsmapid>
+			<walkin:county_num>17</walkin:county_num>
+			<walkin:acres>157.495448670</walkin:acres>
+			<walkin:shape_leng>3196.83782535</walkin:shape_leng>
+			<walkin:shape_area>637361.467948</walkin:shape_area>
+			<walkin:usernotes>Food plots with permanent deer stands present.</walkin:usernotes>
+			<walkin:atlas_page>35.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>87.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.34065 43.905983 -95.342024 43.905971 -95.344006 43.90598 -95.34593 43.906015 -95.348411 43.90598 -95.350659 43.905994 -95.350639 43.907539 -95.350667 43.908946 -95.350664 43.910392 -95.350668 43.911761 -95.350669 43.913048 -95.347834 43.913046 -95.3445 43.913045 -95.342524 43.913062 -95.340445 43.913069 -95.340447 43.911753 -95.340584 43.909449 -95.340606 43.907934 -95.34065 43.905983</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.40">
+			<walkin:gid>40</walkin:gid>
+			<walkin:cty_name>Douglas</walkin:cty_name>
+			<walkin:map_title>Douglas WIA #275</walkin:map_title>
+			<walkin:wia_id>wia210275</walkin:wia_id>
+			<walkin:wia_pdf>wia210275.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #275</walkin:map_label_>
+			<walkin:gpsmapid>DOUG WIA 275</walkin:gpsmapid>
+			<walkin:county_num>21</walkin:county_num>
+			<walkin:acres>174.450297894</walkin:acres>
+			<walkin:shape_leng>6285.38287350</walkin:shape_leng>
+			<walkin:shape_area>705975.308421</walkin:shape_area>
+			<walkin:atlas_page>15.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>55.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.545991 46.049238 -95.543764 46.049213 -95.541607 46.049268 -95.541545 46.047754 -95.541589 46.045994 -95.541551 46.044851 -95.541578 46.042983 -95.542385 46.042357 -95.542541 46.042236 -95.544806 46.042219 -95.546368 46.042213 -95.54649 46.042143 -95.546681 46.042034 -95.546715 46.042015 -95.546734 46.041151 -95.546859 46.039787 -95.546718 46.038555 -95.548332 46.038556 -95.550212 46.038526 -95.551905 46.03851 -95.551881 46.0421 -95.551881 46.042129 -95.549837 46.042148 -95.54862 46.042138 -95.546711 46.042212 -95.546681 46.04262 -95.546584 46.043985 -95.546663 46.045696 -95.546682 46.045696 -95.549516 46.045714 -95.551915 46.045691 -95.552196 46.045688 -95.553887 46.045717 -95.554369 46.045725 -95.556326 46.045722 -95.558858 46.045723 -95.562097 46.04575 -95.562083 46.047185 -95.560158 46.047196 -95.558352 46.047206 -95.556315 46.047034 -95.554736 46.046554 -95.552567 46.046749 -95.551608 46.047851 -95.549791 46.047789 -95.549659 46.049176 -95.54796 46.049202 -95.54604 46.049239 -95.545991 46.049238</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.41">
+			<walkin:gid>41</walkin:gid>
+			<walkin:cty_name>Douglas</walkin:cty_name>
+			<walkin:map_title>Douglas WIA #276</walkin:map_title>
+			<walkin:wia_id>wia210276</walkin:wia_id>
+			<walkin:wia_pdf>wia210276.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #276</walkin:map_label_>
+			<walkin:gpsmapid>DOUG WIA 276</walkin:gpsmapid>
+			<walkin:county_num>21</walkin:county_num>
+			<walkin:acres>65.5636995627</walkin:acres>
+			<walkin:shape_leng>2450.77025597</walkin:shape_leng>
+			<walkin:shape_area>265326.878652</walkin:shape_area>
+			<walkin:atlas_page>15.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>55.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.465544 46.037618 -95.464997 46.037629 -95.465107 46.038372 -95.462679 46.038388 -95.460289 46.038312 -95.45856 46.038358 -95.458527 46.037732 -95.4585 46.037213 -95.459015 46.037019 -95.459961 46.036171 -95.46026 46.035011 -95.463241 46.034958 -95.466231 46.034989 -95.468607 46.034992 -95.468727 46.036986 -95.468782 46.038525 -95.467696 46.038502 -95.466373 46.038408 -95.46655 46.037599 -95.465876 46.037612 -95.465544 46.037618</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.42">
+			<walkin:gid>42</walkin:gid>
+			<walkin:cty_name>Douglas</walkin:cty_name>
+			<walkin:map_title>Douglas WIA #277</walkin:map_title>
+			<walkin:wia_id>wia210277</walkin:wia_id>
+			<walkin:wia_pdf>wia210277.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #277</walkin:map_label_>
+			<walkin:gpsmapid>DOUG WIA 277</walkin:gpsmapid>
+			<walkin:county_num>21</walkin:county_num>
+			<walkin:acres>73.5109307516</walkin:acres>
+			<walkin:shape_leng>2383.58616126</walkin:shape_leng>
+			<walkin:shape_area>297488.182229</walkin:shape_area>
+			<walkin:atlas_page>16.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>56.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.318039 45.94038 -95.317988 45.938862 -95.319098 45.938867 -95.319053 45.937915 -95.319149 45.936964 -95.320843 45.936978 -95.323035 45.936992 -95.323109 45.938158 -95.323129 45.93847 -95.323102 45.940239 -95.323097 45.940527 -95.323097 45.940576 -95.322973 45.942422 -95.323011 45.944196 -95.323012 45.944237 -95.320629 45.944236 -95.319068 45.944201 -95.318016 45.944177 -95.318016 45.943237 -95.317986 45.941832 -95.318033 45.940543 -95.318039 45.94038</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.43">
+			<walkin:gid>43</walkin:gid>
+			<walkin:cty_name>Douglas</walkin:cty_name>
+			<walkin:map_title>Douglas WIA #278</walkin:map_title>
+			<walkin:wia_id>wia210278</walkin:wia_id>
+			<walkin:wia_pdf>wia210278.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #278</walkin:map_label_>
+			<walkin:gpsmapid>DOUG WIA 278</walkin:gpsmapid>
+			<walkin:county_num>21</walkin:county_num>
+			<walkin:acres>170.599677383</walkin:acres>
+			<walkin:shape_leng>4323.22366999</walkin:shape_leng>
+			<walkin:shape_area>690392.400079</walkin:shape_area>
+			<walkin:atlas_page>16.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>56.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.207589 46.002894 -95.205244 46.002767 -95.203401 46.002845 -95.203401 46.002845 -95.203401 46.002777 -95.203412 46.000593 -95.203394 45.998468 -95.203395 45.99825 -95.203414 45.996029 -95.203414 45.993242 -95.203381 45.991128 -95.203715 45.991179 -95.204179 45.992158 -95.207862 45.992137 -95.208433 45.99121 -95.20844 45.9912 -95.209541 45.99115 -95.209504 45.991813 -95.209671 45.992836 -95.211589 45.992889 -95.213463 45.992869 -95.213465 45.994043 -95.212531 45.994698 -95.212052 45.995536 -95.212548 45.996399 -95.213436 45.996847 -95.21341 45.997527 -95.213385 45.998199 -95.210895 45.998185 -95.20889 45.998241 -95.208439 45.998254 -95.208436 45.998254 -95.208422 45.999873 -95.208399 46.001033 -95.208354 46.002028 -95.207905 46.002468 -95.207589 46.002894</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.44">
+			<walkin:gid>44</walkin:gid>
+			<walkin:cty_name>Douglas</walkin:cty_name>
+			<walkin:map_title>Douglas WIA #279</walkin:map_title>
+			<walkin:wia_id>wia210279</walkin:wia_id>
+			<walkin:wia_pdf>wia210279.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #279</walkin:map_label_>
+			<walkin:gpsmapid>DOUG WIA 279</walkin:gpsmapid>
+			<walkin:county_num>21</walkin:county_num>
+			<walkin:acres>66.2651677156</walkin:acres>
+			<walkin:shape_leng>2172.24861931</walkin:shape_leng>
+			<walkin:shape_area>268165.619551</walkin:shape_area>
+			<walkin:atlas_page>16.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>56.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.19865 45.97907 -95.198693 45.977296 -95.203707 45.977446 -95.203602 45.979898 -95.203545 45.981111 -95.203426 45.983669 -95.200882 45.983656 -95.19924 45.983669 -95.198496 45.983675 -95.198497 45.983661 -95.198636 45.981521 -95.198638 45.980038 -95.19865 45.97907</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.45">
+			<walkin:gid>45</walkin:gid>
+			<walkin:cty_name>Douglas</walkin:cty_name>
+			<walkin:map_title>Douglas WIA #280</walkin:map_title>
+			<walkin:wia_id>wia210280</walkin:wia_id>
+			<walkin:wia_pdf>wia210280.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #280</walkin:map_label_>
+			<walkin:gpsmapid>DOUG WIA 280</walkin:gpsmapid>
+			<walkin:county_num>21</walkin:county_num>
+			<walkin:acres>41.0191840276</walkin:acres>
+			<walkin:shape_leng>2268.46754921</walkin:shape_leng>
+			<walkin:shape_area>165998.748324</walkin:shape_area>
+			<walkin:atlas_page>16.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>56.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.164021 45.999511 -95.164009 45.998177 -95.165293 45.998155 -95.165347 45.999377 -95.165226 46.000432 -95.165057 46.000655 -95.165029 46.000928 -95.165171 46.001232 -95.16546 46.001634 -95.165796 46.001902 -95.166504 46.002212 -95.166819 46.002256 -95.167501 46.002297 -95.167646 46.003634 -95.167659 46.003752 -95.167639 46.005137 -95.167637 46.00523 -95.167637 46.005244 -95.165309 46.005256 -95.16345 46.005248 -95.162729 46.005244 -95.162609 46.003178 -95.163699 46.003043 -95.163711 46.002341 -95.164111 46.002274 -95.164058 46.00102 -95.164021 45.999511</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.46">
+			<walkin:gid>46</walkin:gid>
+			<walkin:cty_name>Douglas</walkin:cty_name>
+			<walkin:map_title>Douglas WIA #281</walkin:map_title>
+			<walkin:wia_id>wia210281</walkin:wia_id>
+			<walkin:wia_pdf>wia210281.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #281</walkin:map_label_>
+			<walkin:gpsmapid>DOUG WIA 281</walkin:gpsmapid>
+			<walkin:county_num>21</walkin:county_num>
+			<walkin:acres>81.5635435092</walkin:acres>
+			<walkin:shape_leng>3871.76920766</walkin:shape_leng>
+			<walkin:shape_area>330075.949884</walkin:shape_area>
+			<walkin:atlas_page>16.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>56.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.156603 45.966734 -95.155156 45.965432 -95.157452 45.965453 -95.159443 45.96545 -95.161597 45.965449 -95.161693 45.967621 -95.161631 45.969264 -95.161768 45.970473 -95.158981 45.968683 -95.158175 45.968124 -95.156603 45.966734</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.153063 45.970053 -95.153449 45.968363 -95.156297 45.968389 -95.156443 45.969318 -95.157559 45.96989 -95.157843 45.969962 -95.158289 45.969539 -95.158775 45.96889 -95.161738 45.970733 -95.161813 45.971722 -95.159909 45.971661 -95.157846 45.971643 -95.155124 45.971628 -95.15305 45.971579 -95.153063 45.970053</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.47">
+			<walkin:gid>47</walkin:gid>
+			<walkin:cty_name>Douglas</walkin:cty_name>
+			<walkin:map_title>Douglas WIA #285</walkin:map_title>
+			<walkin:wia_id>wia210285</walkin:wia_id>
+			<walkin:wia_pdf>wia210285.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #285</walkin:map_label_>
+			<walkin:gpsmapid>DOUG WIA 285</walkin:gpsmapid>
+			<walkin:county_num>21</walkin:county_num>
+			<walkin:acres>45.9033025846</walkin:acres>
+			<walkin:shape_leng>2581.35087507</walkin:shape_leng>
+			<walkin:shape_area>185764.074874</walkin:shape_area>
+			<walkin:atlas_page>15.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>55.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.563764 45.996186 -95.563616 45.994963 -95.563609 45.994906 -95.564862 45.994671 -95.566104 45.994625 -95.566117 45.993844 -95.567477 45.993841 -95.567522 45.993841 -95.567554 45.992646 -95.568622 45.992616 -95.569162 45.993257 -95.569928 45.99367 -95.570023 45.995273 -95.572441 45.995279 -95.572447 45.995388 -95.571025 45.995763 -95.570572 45.996306 -95.570521 45.996367 -95.568374 45.996344 -95.568296 45.996303 -95.567322 45.995783 -95.56725 45.997523 -95.567269 45.998516 -95.565278 45.998561 -95.564946 45.998568 -95.564947 45.998562 -95.565201 45.997628 -95.564854 45.996255 -95.564842 45.996254 -95.564461 45.99623 -95.563764 45.996186</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.48">
+			<walkin:gid>48</walkin:gid>
+			<walkin:cty_name>Douglas</walkin:cty_name>
+			<walkin:map_title>Douglas WIA #291</walkin:map_title>
+			<walkin:wia_id>wia210291</walkin:wia_id>
+			<walkin:wia_pdf>wia210291.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #291</walkin:map_label_>
+			<walkin:gpsmapid>DOUG WIA 291</walkin:gpsmapid>
+			<walkin:county_num>21</walkin:county_num>
+			<walkin:acres>104.792158662</walkin:acres>
+			<walkin:shape_leng>4766.88323264</walkin:shape_leng>
+			<walkin:shape_area>424078.820300</walkin:shape_area>
+			<walkin:atlas_page>19.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>63.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.228344 45.831336 -95.226949 45.831319 -95.223058 45.831321 -95.222926 45.829324 -95.222752 45.827152 -95.222593 45.825728 -95.22246 45.824247 -95.22507 45.824267 -95.228703 45.824261 -95.22939 45.82518 -95.23264 45.825203 -95.233019 45.827208 -95.231606 45.827209 -95.231588 45.829339 -95.231753 45.830889 -95.232163 45.830944 -95.232241 45.831305 -95.228344 45.831336</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+							<gml:interior>
+								<gml:LinearRing>
+									<gml:posList>-95.228807 45.827162 -95.228919 45.826044 -95.22879 45.825874 -95.228282 45.825832 -95.227176 45.826171 -95.226065 45.826183 -95.225662 45.826091 -95.225661 45.827485 -95.225733 45.829135 -95.22576 45.830687 -95.226843 45.830811 -95.227703 45.831007 -95.228359 45.831041 -95.228617 45.831003 -95.228652 45.829712 -95.228113 45.829461 -95.228065 45.828914 -95.228508 45.827586 -95.228807 45.827162</gml:posList>
+								</gml:LinearRing>
+							</gml:interior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+	<wfs:member>
+		<walkin:geom gml:id="geom.49">
+			<walkin:gid>49</walkin:gid>
+			<walkin:cty_name>Jackson</walkin:cty_name>
+			<walkin:map_title>Jackson WIA #176 E</walkin:map_title>
+			<walkin:wia_id>wia320176e</walkin:wia_id>
+			<walkin:wia_pdf>wia320176e.pdf</walkin:wia_pdf>
+			<walkin:map_label_>WIA #176E</walkin:map_label_>
+			<walkin:gpsmapid>JACK WIA 176E</walkin:gpsmapid>
+			<walkin:county_num>32</walkin:county_num>
+			<walkin:acres>15.4381079419</walkin:acres>
+			<walkin:shape_leng>2417.55930850</walkin:shape_leng>
+			<walkin:shape_area>62475.8062747</walkin:shape_area>
+			<walkin:atlas_page>36.0000000000</walkin:atlas_page>
+			<walkin:wia_tile>88.0000000000</walkin:wia_tile>
+			<walkin:geom>
+				<gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2">
+					<gml:surfaceMember>
+						<gml:Polygon>
+							<gml:exterior>
+								<gml:LinearRing>
+									<gml:posList>-95.196971 43.84457 -95.196952 43.842625 -95.19694 43.842278 -95.196948 43.84115 -95.196949 43.841062 -95.197076 43.841058 -95.197687 43.841039 -95.197761 43.839363 -95.197875 43.837149 -95.198591 43.837139 -95.198601 43.839425 -95.199117 43.840142 -95.199272 43.840607 -95.199311 43.841374 -95.198344 43.841909 -95.197183 43.84258 -95.197191 43.844568 -95.197044 43.844565 -95.197061 43.845166 -95.197055 43.845753 -95.197019 43.846144 -95.196774 43.846641 -95.196702 43.846754 -95.196578 43.84695 -95.196567 43.846967 -95.196531 43.846903 -95.196533 43.846899 -95.196639 43.846685 -95.196716 43.84653 -95.196928 43.846018 -95.196971 43.84457</gml:posList>
+								</gml:LinearRing>
+							</gml:exterior>
+						</gml:Polygon>
+					</gml:surfaceMember>
+				</gml:MultiSurface>
+			</walkin:geom>
+		</walkin:geom>
+	</wfs:member>
+</wfs:FeatureCollection>

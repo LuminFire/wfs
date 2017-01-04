@@ -198,11 +198,17 @@ class WFS_200 {
 				if ( empty( $geom ) ) {
 					$a = 1;
 					$geom = WP_GeoUtil::metaval_to_geom( $geom_field );
-					print $geom . "\n";
 					$geom = json_decode( WP_GeoUtil::geom_to_geojson( $geom ), true );
 					continue;
 				}
 
+				$geojson_wrap = json_decode( WP_GeoUtil::merge_geojson( $geom ), true );
+				$geojson_chunk = $geojson_wrap['features'][0];
+				$geojson_chunk[ '_ns' ] = get_post_type();
+				$geojson_chunk[ '_feature' ] = $featureType;
+				$geojson_chunk[ 'id' ] = $postID;
+
+				/*
 				$geojson_chunk = array(
 					'type' => 'Feature',
 					'id' => $postID,
@@ -211,6 +217,7 @@ class WFS_200 {
 					'_ns' => get_post_type(),
 					'_feature' => $featureType,
 					);
+				 */
 
 				if ( !empty( $propertyname ) ) {
 					$meta = array_intersect_key( $meta, array_flip( $propertyname ) );
@@ -231,9 +238,16 @@ class WFS_200 {
 			case 'json':
 				print json_encode( $json );
 			default:
-				header( 'Content-type: application/xml' );
+				// header( 'Content-Type: text/xml; subtype=gml/3.2' );
+				header( 'Content-Type: text/xml' );
 				require_once( dirname( __FILE__ ) . '/geojson-to/geojson-to.php' );
-				$gml = geojson_to::gml32( $json );
+
+				$ns_ft = array();
+				foreach( $json['features'] as $feature ) {
+					$ns_ft[ $feature['_ns'] ] = $feature['_feature'];
+				}
+
+				$gml = geojson_to::gml32( $json, $ns_ft );
 				$gml->preserveWhiteSpace = false;
 				$gml->formatOutput = true;
 				$xml = $gml->saveXML();
@@ -285,7 +299,7 @@ class WFS_200 {
 					$xml .= '<xsd:element maxOccurs="1" minOccurs="0" name="' . esc_attr( $meta_key ) . '" nillable="true" type="xsd:string"/>' . "\n";
 				}
 
-				$xml .= '<xsd:element maxOccurs="1" minOccurs="0" name="' . esc_attr( $featureType ) . '" nillable="true" type="gml:GeometryPropertyType"/>' . "\n";
+				$xml .= '<xsd:element maxOccurs="1" minOccurs="0" name="' . esc_attr( $featureType ) . '_geom" nillable="true" type="gml:SurfacePropertyType"/>' . "\n";
 
 				$xml .= '</xsd:sequence>' . "\n";
 				$xml .= '</xsd:extension>' . "\n";
