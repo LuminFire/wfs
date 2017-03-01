@@ -299,6 +299,21 @@ class WFS_200 {
 					$xml .= '<xsd:element maxOccurs="1" minOccurs="0" name="' . esc_attr( $meta_key ) . '" nillable="true" type="xsd:string"/>' . "\n";
 				}
 
+				/*
+				 $gmlType = 
+					gml:AbstractRingPropertyType
+					gml:CurvePropertyType
+					gml:CurveSegmentArrayPropertyType
+					gml:GeometryPropertyType
+					gml:MultiCurvePropertyType
+					gml:MultiGeometryPropertyType
+					gml:MultiPointPropertyType
+					gml:MultiSurfacePropertyType
+					gml:PointPropertyType
+					gml:SurfacePatchArrayPropertyType
+					gml:SurfacePropertyType
+				 */
+
 				$xml .= '<xsd:element maxOccurs="1" minOccurs="0" name="' . esc_attr( $featureType ) . '_geom" nillable="true" type="gml:SurfacePropertyType"/>' . "\n";
 
 				$xml .= '</xsd:sequence>' . "\n";

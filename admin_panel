@@ -1,0 +1,19 @@
+
+* List of layers with spatial data
+	- Set namespace
+	- Set feature
+	- Set Title
+	- Set Abstract
+	- Set Keywords
+	- Toggle to require user to be logged in or not
+	- Toggle to make service public or not 
+	- Drop down to select layer type (Point, Line, Polygon)
+	- List of meta keys for the post type with ability to toggle them on and off (except geometa keys?)
+
+* Ability to publish a layer multiple times
+	- Once with polygons once with points
+	- Once that requires user to be logged in or not
+
+* Map with list of layers and ability to toggle them on/off (on the map, for visualization purposes)
+
+* WFS links

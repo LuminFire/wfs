@@ -1,2 +1,0 @@
-
-					$wkt = preg_replace( '@^(LINE|POLYGON)(\s*)(\(.*?\))@','MULTI$1$2($3)', $wkt );

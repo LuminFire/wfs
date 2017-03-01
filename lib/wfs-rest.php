@@ -38,13 +38,6 @@ class WFS_Rest {
 
 		add_action('rest_api_init', function() {
 
-			// Schemas! Schemas for everyone!
-			register_rest_route( 'wfs','/schemas/.*', array(
-					'methods' => WP_REST_Server::ALLMETHODS,
-					'callback' => array( $this, 'handle_schema_request' ),
-				) 
-			);
-
 			// Base WFS 2.0.0 URL
 			register_rest_route( 'wfs','/2.0.0/', array(
 					'methods' => WP_REST_Server::ALLMETHODS,
