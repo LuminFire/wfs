@@ -1,0 +1,3 @@
+[submodule "lib/wp-geometa-lib"]
+	path = lib/wp-geometa-lib
+	url = git@github.com:BrilliantPlugins/wp-geometa-lib.git
